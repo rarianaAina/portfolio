@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "cv": "CV"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Rariana Aina ANDRIAMIADANA",
+    "subtitle": "Passionate developer specialized in modern web development and Java technologies.",
+    "cta_projects": "View my projects",
+    "cta_contact": "Contact me"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "Passionate about development",
+    "description_1": "With several years of experience in software development, I specialize in creating robust and high-performance web applications. My passion for new technologies constantly pushes me to learn and innovate.",
+    "description_2": "I have particular expertise in the Java ecosystem with Spring Boot, as well as in modern front-end technologies. I love creating elegant solutions that solve real problems.",
+    "description_3": "When I'm not coding, I enjoy exploring the latest technology trends, contributing to open source projects, and sharing my knowledge with the developer community."
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Discover a selection of my recent projects that showcase my technical skills and creativity.",
+    "project1": {
+      "name": "Fullstack Financial Analysis",
+      "description": "Complete financial analysis application with Spring Boot backend and React frontend. Financial statements management and analytical dashboards."
+    },
+    "project2": {
+      "name": "E-commerce Platform",
+      "description": "Scalable e-commerce platform with Vue.js, Spring Boot and PostgreSQL. Integrated payment system with Stripe."
+    },
+    "project3": {
+      "name": "Task Management System",
+      "description": "Real-time collaborative task management application with WebSocket. JWT authentication and multi-user synchronization."
+    },
+    "github": "GitHub"
+  },
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "Here are the technologies and tools I master to create innovative solutions.",
+    "main_title": "Main Technologies",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "database": "Database",
+    "devops": "DevOps",
+    "tools": "Tools",
+    "soft_skills": "Soft Skills",
+    "expert": "Expert",
+    "advanced": "Advanced",
+    "intermediate": "Intermediate"
+  },
+  "contact": {
+    "title": "Contact me",
+    "subtitle": "Do you have a project in mind? A question? Feel free to contact me!",
+    "stay_connected": "Let's stay connected",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "follow": "Follow me",
+    "form_name": "Full name",
+    "form_name_placeholder": "Your full name",
+    "form_email": "Email",
+    "form_email_placeholder": "your.email[at]example.com",
+    "form_subject": "Subject",
+    "form_subject_placeholder": "Subject of your message",
+    "form_message": "Message",
+    "form_message_placeholder": "Your message here",
+    "form_submit": "Send message"
+  },
+  "footer": {
+    "copyright": "© 2025 Rariana Aina ANDRIAMIADANA. All rights reserved."
+  }
+}

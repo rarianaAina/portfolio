@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "contact": "Contact",
+    "cv": "CV"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Rariana Aina ANDRIAMIADANA",
+    "subtitle": "Développeur passionné par l'informatique, spécialisé dans le développement web moderne et les technologies Java.",
+    "cta_projects": "Voir mes projets",
+    "cta_contact": "Me contacter"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "Passionné par le développement",
+    "description_1": "Fort de plusieurs années d'expérience dans le développement informatique, je me spécialise dans la création d'applications web robustes et performantes. Ma passion pour les nouvelles technologies me pousse constamment à apprendre et à innover.",
+    "description_2": "J'ai une expertise particulière dans l'écosystème Java avec Spring Boot, ainsi que dans les technologies front-end modernes. J'aime créer des solutions élégantes qui résolvent des problèmes réels.",
+    "description_3": "Quand je ne code pas, j'aime explorer les dernières tendances technologiques, contribuer à des projets open source, et partager mes connaissances avec la communauté des développeurs."
+  },
+  "projects": {
+    "title": "Mes Projets",
+    "subtitle": "Découvrez une sélection de mes projets récents qui démontrent mes compétences techniques et ma créativité.",
+    "project1": {
+      "name": "Analyse Financière Fullstack",
+      "description": "Application complète d'analyse financière avec backend Spring Boot et frontend React. Gestion des états financiers et tableaux de bord analytiques."
+    },
+    "project2": {
+      "name": "Plateforme E-commerce",
+      "description": "Plateforme e-commerce scalable avec Vue.js, Spring Boot et PostgreSQL. Système de paiement intégré avec Stripe."
+    },
+    "project3": {
+      "name": "Système de Gestion de Tâches",
+      "description": "Application collaborative de gestion de tâches en temps réel avec WebSocket. Authentification JWT et synchronisation multi-utilisateur."
+    },
+    "github": "GitHub"
+  },
+  "skills": {
+    "title": "Mes Compétences",
+    "subtitle": "Voici les technologies et outils que je maîtrise pour créer des solutions innovantes.",
+    "main_title": "Technologies Principales",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "database": "Base de données",
+    "devops": "DevOps",
+    "tools": "Outils",
+    "soft_skills": "Soft Skills",
+    "expert": "Expert",
+    "advanced": "Avancé",
+    "intermediate": "Intermédiaire"
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "subtitle": "Vous avez un projet en tête ? Une question ? N'hésitez pas à me contacter !",
+    "stay_connected": "Restons en contact",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "follow": "Suivez-moi",
+    "form_name": "Nom complet",
+    "form_name_placeholder": "Votre nom complet",
+    "form_email": "Email",
+    "form_email_placeholder": "votre.email[at]exemple.com",
+    "form_subject": "Sujet",
+    "form_subject_placeholder": "Sujet de votre message",
+    "form_message": "Message",
+    "form_message_placeholder": "Votre message ici",
+    "form_submit": "Envoyer le message"
+  },
+  "footer": {
+    "copyright": "© 2025 Rariana Aina ANDRIAMIADANA. Tous droits réservés."
+  }
+}

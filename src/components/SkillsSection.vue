@@ -1,13 +1,13 @@
 <template>
-  <section id="competences" class="py-16 lg:py-24 section-padding bg-white dark:bg-gray-800">
+  <section id="skills" class="py-16 lg:py-24 section-padding bg-white dark:bg-gray-800">
     <div class="container-max">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Mes Compétences
+          {{ $t('skills.title') }}
         </h2>
         <div class="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto mb-6"></div>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Voici les technologies et outils que je maîtrise pour créer des solutions innovantes.
+          {{ $t('skills.subtitle') }}
         </p>
       </div>
       
@@ -41,7 +41,7 @@
       <!-- Main Skills Highlight -->
       <div class="mt-16">
         <h3 class="text-2xl font-semibold text-gray-900 dark:text-white text-center mb-8">
-          Technologies Principales
+          {{ $t('skills.main_title') }}
         </h3>
         <div class="flex flex-wrap justify-center gap-4">
           <div 
@@ -65,49 +65,53 @@
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n'
+
 export default {
   name: 'SkillsSection',
   setup() {
+    const { t } = useI18n()
+    
     const skillCategories = [
       {
-        name: 'Backend',
+        name: t('skills.backend'),
         icon: '⚙️',
         skills: ['Java', 'Spring Boot', 'Spring Security', 'JPA/Hibernate', 'Maven']
       },
       {
-        name: 'Frontend',
+        name: t('skills.frontend'),
         icon: '🎨',
         skills: ['Vue.js', 'React', 'JavaScript', 'Tailwind CSS', 'HTML5/CSS3']
       },
       {
-        name: 'Base de données',
+        name: t('skills.database'),
         icon: '💾',
         skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'SQL']
       },
       {
-        name: 'DevOps',
+        name: t('skills.devops'),
         icon: '🔧',
         skills: ['Docker', 'Git', 'GitHub Actions', 'Linux', 'Nginx']
       },
       {
-        name: 'Outils',
+        name: t('skills.tools'),
         icon: '🛠️',
         skills: ['IntelliJ IDEA', 'VS Code', 'Postman', 'Figma', 'Slack']
       },
       {
-        name: 'Soft Skills',
+        name: t('skills.soft_skills'),
         icon: '🧠',
         skills: ['Problem Solving', 'Team Work', 'Communication', 'Leadership', 'Creativity']
       }
     ]
     
     const mainSkills = [
-      { name: 'Java', icon: '☕', level: 'Expert' },
-      { name: 'Spring Boot', icon: '🍃', level: 'Expert' },
-      { name: 'PostgreSQL', icon: '🐘', level: 'Avancé' },
-      { name: 'Tailwind CSS', icon: '🎨', level: 'Expert' },
-      { name: 'Docker', icon: '🐳', level: 'Intermédiaire' },
-      { name: 'Git', icon: '📝', level: 'Expert' }
+      { name: 'Java', icon: '☕', level: t('skills.expert') },
+      { name: 'Spring Boot', icon: '🍃', level: t('skills.expert') },
+      { name: 'PostgreSQL', icon: '🐘', level: t('skills.advanced') },
+      { name: 'Tailwind CSS', icon: '🎨', level: t('skills.expert') },
+      { name: 'Docker', icon: '🐳', level: t('skills.intermediate') },
+      { name: 'Git', icon: '📝', level: t('skills.expert') }
     ]
     
     return {

@@ -3,11 +3,11 @@
     <div class="container-max">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Contactez-moi
+          {{ $t('contact.title') }}
         </h2>
         <div class="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto mb-6"></div>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Vous avez un projet en tête ? Une question ? N'hésitez pas à me contacter !
+          {{ $t('contact.subtitle') }}
         </p>
       </div>
       
@@ -16,7 +16,7 @@
           <!-- Contact Info -->
           <div class="animate-slide-up">
             <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-8">
-              Restons en contact
+              {{ $t('contact.stay_connected') }}
             </h3>
             
             <div class="space-y-6">
@@ -25,7 +25,7 @@
                   <EnvelopeIcon class="h-6 w-6 text-primary-600 dark:text-primary-400" />
                 </div>
                 <div>
-                  <h4 class="font-medium text-gray-900 dark:text-white">Email</h4>
+                  <h4 class="font-medium text-gray-900 dark:text-white">{{ $t('contact.email') }}</h4>
                   <a 
                     href="mailto:rarianamiadana@gmail.com" 
                     class="text-primary-600 dark:text-primary-400 hover:underline"
@@ -42,7 +42,7 @@
                   </svg>
                 </div>
                 <div>
-                  <h4 class="font-medium text-gray-900 dark:text-white">GitHub</h4>
+                  <h4 class="font-medium text-gray-900 dark:text-white">{{ $t('contact.github') }}</h4>
                   <a 
                     href="https://github.com/rarianaAina" 
                     target="_blank"
@@ -60,7 +60,7 @@
                   </svg>
                 </div>
                 <div>
-                  <h4 class="font-medium text-gray-900 dark:text-white">LinkedIn</h4>
+                  <h4 class="font-medium text-gray-900 dark:text-white">{{ $t('contact.linkedin') }}</h4>
                   <a 
                     href="https://linkedin.com/in/rariana-aina-andriamiadana" 
                     target="_blank"
@@ -74,7 +74,7 @@
             
             <!-- Social Links -->
             <div class="mt-8">
-              <h4 class="font-medium text-gray-900 dark:text-white mb-4">Suivez-moi</h4>
+              <h4 class="font-medium text-gray-900 dark:text-white mb-4">{{ $t('contact.follow') }}</h4>
               <div class="flex space-x-4">
                 <a 
                   href="https://github.com/rarianaAina" 
@@ -111,7 +111,7 @@
             <form @submit.prevent="handleSubmit" class="space-y-6">
               <div>
                 <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Nom complet
+                  {{ $t('contact.form_name') }}
                 </label>
                 <input 
                   type="text" 
@@ -119,13 +119,13 @@
                   v-model="form.name"
                   required
                   class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-800 focus:border-primary-500 transition-colors duration-200"
-                  placeholder="Votre nom complet"
+                  :placeholder="$t('contact.form_name_placeholder')"
                 />
               </div>
               
               <div>
                 <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Email
+                  {{ $t('contact.form_email') }}
                 </label>
                 <input 
                   type="email" 
@@ -133,13 +133,13 @@
                   v-model="form.email"
                   required
                   class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-800 focus:border-primary-500 transition-colors duration-200"
-                  placeholder="votre.email@exemple.com"
+                  :placeholder="$t('contact.form_email_placeholder')"
                 />
               </div>
               
               <div>
                 <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Sujet
+                  {{ $t('contact.form_subject') }}
                 </label>
                 <input 
                   type="text" 
@@ -147,13 +147,13 @@
                   v-model="form.subject"
                   required
                   class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-800 focus:border-primary-500 transition-colors duration-200"
-                  placeholder="Sujet de votre message"
+                  :placeholder="$t('contact.form_subject_placeholder')"
                 />
               </div>
               
               <div>
                 <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Message
+                  {{ $t('contact.form_message') }}
                 </label>
                 <textarea 
                   id="message" 
@@ -161,7 +161,7 @@
                   v-model="form.message"
                   required
                   class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-800 focus:border-primary-500 transition-colors duration-200"
-                  placeholder="Votre message..."
+                  :placeholder="$t('contact.form_message_placeholder')"
                 ></textarea>
               </div>
               
@@ -169,7 +169,7 @@
                 type="submit"
                 class="w-full btn-primary"
               >
-                Envoyer le message
+                {{ $t('contact.form_submit') }}
               </button>
             </form>
           </div>
@@ -182,6 +182,7 @@
 <script>
 import { ref } from 'vue'
 import { EnvelopeIcon } from '@heroicons/vue/24/outline'
+import { useI18n } from 'vue-i18n'
 
 export default {
   name: 'ContactSection',
@@ -189,6 +190,7 @@ export default {
     EnvelopeIcon
   },
   setup() {
+    useI18n()
     const form = ref({
       name: '',
       email: '',

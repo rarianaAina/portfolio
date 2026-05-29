@@ -24,7 +24,7 @@
     <!-- Footer -->
     <footer class="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-8">
       <div class="container-max section-padding text-center text-gray-600 dark:text-gray-400">
-        <p>&copy; 2025 Rariana Aina ANDRIAMIADANA. Tous droits réservés.</p>
+        <p>{{ $t('footer.copyright') }}</p>
       </div>
     </footer>
   </div>
@@ -32,6 +32,7 @@
 
 <script>
 import { ref, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import Navigation from './components/Navigation.vue'
 import HeroSection from './components/HeroSection.vue'
 import AboutSection from './components/AboutSection.vue'
@@ -50,6 +51,7 @@ export default {
     ContactSection
   },
   setup() {
+    useI18n()
     const darkMode = ref(false)
     
     const toggleDarkMode = () => {

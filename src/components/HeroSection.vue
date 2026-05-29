@@ -9,22 +9,22 @@
         </div>
         
         <h1 class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-          Bonjour, je suis
+          {{ $t('hero.greeting') }}
           <span class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
-            Rariana Aina ANDRIAMIADANA
+            {{ $t('hero.name') }}
           </span>
         </h1>
         
         <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-          Développeur passionné par l'informatique, spécialisé dans le développement web moderne et les technologies Java.
+          {{ $t('hero.subtitle') }}
         </p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a href="#projets" class="btn-primary">
-            Voir mes projets
+          <a href="#projects" class="btn-primary">
+            {{ $t('hero.cta_projects') }}
           </a>
           <a href="#contact" class="btn-secondary">
-            Me contacter
+            {{ $t('hero.cta_contact') }}
           </a>
         </div>
         
@@ -39,11 +39,16 @@
 
 <script>
 import { ChevronDownIcon } from '@heroicons/vue/24/outline'
+import { useI18n } from 'vue-i18n'
 
 export default {
   name: 'HeroSection',
   components: {
     ChevronDownIcon
+  },
+  setup() {
+    useI18n()
+    return {}
   }
 }
 </script>

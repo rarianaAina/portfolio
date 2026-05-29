@@ -6,7 +6,7 @@
 </style>
 <template>
   <section
-    id="apropos"
+    id="about"
     class="py-16 lg:py-24 section-padding bg-white dark:bg-gray-800"
   >
     <div class="container-max">
@@ -14,7 +14,7 @@
         <h2
           class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4"
         >
-          À propos de moi
+          {{ $t('about.title') }}
         </h2>
         <div
           class="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto"
@@ -69,29 +69,22 @@
 
         <div class="animate-slide-up">
           <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-            Passionné par le développement
+            {{ $t('about.subtitle') }}
           </h3>
 
           <div
             class="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed"
           >
             <p>
-              Fort de plusieurs années d'expérience dans le développement
-              informatique, je me spécialise dans la création d'applications web
-              robustes et performantes. Ma passion pour les nouvelles
-              technologies me pousse constamment à apprendre et à innover.
+              {{ $t('about.description_1') }}
             </p>
 
             <p>
-              J'ai une expertise particulière dans l'écosystème Java avec Spring
-              Boot, ainsi que dans les technologies front-end modernes. J'aime
-              créer des solutions élégantes qui résolvent des problèmes réels.
+              {{ $t('about.description_2') }}
             </p>
 
             <p>
-              Quand je ne code pas, j'aime explorer les dernières tendances
-              technologiques, contribuer à des projets open source, et partager
-              mes connaissances avec la communauté des développeurs.
+              {{ $t('about.description_3') }}
             </p>
           </div>
 
@@ -123,11 +116,16 @@
 
 <script>
 import { CheckCircleIcon } from "@heroicons/vue/24/outline";
+import { useI18n } from "vue-i18n";
 
 export default {
   name: "AboutSection",
   components: {
     CheckCircleIcon,
   },
+  setup() {
+    useI18n()
+    return {}
+  }
 };
 </script>

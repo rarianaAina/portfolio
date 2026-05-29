@@ -8,15 +8,41 @@
         </div>
         
         <!-- Desktop Menu -->
-        <div class="hidden md:flex items-center space-x-8">
+        <div class="hidden md:flex items-center space-x-4">
           <a 
             v-for="item in menuItems" 
-            :key="item.name"
-            :href="item.href" 
-            class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors duration-200"
+            :key="item"
+            :href="`#${item}`" 
+            class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors duration-200 text-sm"
           >
-            {{ item.name }}
+            {{ $t(`nav.${item}`) }}
           </a>
+          
+          <!-- Download CV Button -->
+          <a 
+            href="/CV_Rariana Aina ANDRIAMIADANA.pdf" 
+            download="CV_Rariana Aina ANDRIAMIADANA.pdf"
+            class="flex items-center gap-2 px-3 py-2 rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-medium transition-colors duration-200 text-sm"
+          >
+            <DocumentArrowDownIcon class="h-4 w-4" />
+            {{ $t('nav.cv') }}
+          </a>
+          
+          <!-- Language Selector -->
+          <div class="flex gap-2">
+            <button
+              @click="changeLanguage('fr')"
+              :class="['px-3 py-2 rounded-lg font-medium transition-colors duration-200 text-sm', currentLanguage === 'fr' ? 'bg-primary-600 text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-primary-600']"
+            >
+              FR
+            </button>
+            <button
+              @click="changeLanguage('en')"
+              :class="['px-3 py-2 rounded-lg font-medium transition-colors duration-200 text-sm', currentLanguage === 'en' ? 'bg-primary-600 text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-primary-600']"
+            >
+              EN
+            </button>
+          </div>
           
           <!-- Dark Mode Toggle -->
           <button 
@@ -29,7 +55,7 @@
         </div>
         
         <!-- Mobile Menu Button -->
-        <div class="md:hidden flex items-center space-x-2">
+        <div class="md:hidden flex items-center space-x-1">
           <button 
             @click="$emit('toggle-dark-mode')"
             class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
@@ -49,24 +75,52 @@
       </div>
       
       <!-- Mobile Menu -->
-      <div v-if="mobileMenuOpen" class="md:hidden py-4 animate-fade-in">
+      <div v-if="mobileMenuOpen" class="md:hidden py-4 animate-fade-in space-y-2">
         <a 
           v-for="item in menuItems" 
-          :key="item.name"
-          :href="item.href"
+          :key="item"
+          :href="`#${item}`"
           @click="mobileMenuOpen = false"
           class="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors duration-200"
         >
-          {{ item.name }}
+          {{ $t(`nav.${item}`) }}
         </a>
+        
+        <!-- Download CV Button Mobile -->
+        <a 
+          href="/CV_Rariana Aina ANDRIAMIADANA.pdf" 
+          download="CV_Rariana Aina ANDRIAMIADANA.pdf"
+          @click="mobileMenuOpen = false"
+          class="flex items-center gap-2 mt-4 px-4 py-2 rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-medium transition-colors duration-200 w-full justify-center"
+        >
+          <DocumentArrowDownIcon class="h-5 w-5" />
+          {{ $t('nav.cv') }}
+        </a>
+        
+        <!-- Language Selector Mobile -->
+        <div class="flex gap-2 mt-4">
+          <button
+            @click="changeLanguage('fr'); mobileMenuOpen = false"
+            :class="['flex-1 px-3 py-2 rounded-lg font-medium transition-colors duration-200', currentLanguage === 'fr' ? 'bg-primary-600 text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400']"
+          >
+            Français
+          </button>
+          <button
+            @click="changeLanguage('en'); mobileMenuOpen = false"
+            :class="['flex-1 px-3 py-2 rounded-lg font-medium transition-colors duration-200', currentLanguage === 'en' ? 'bg-primary-600 text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400']"
+          >
+            English
+          </button>
+        </div>
       </div>
     </div>
   </nav>
 </template>
 
 <script>
-import { ref } from 'vue'
-import { Bars3Icon, XMarkIcon, SunIcon, MoonIcon } from '@heroicons/vue/24/outline'
+import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { Bars3Icon, XMarkIcon, SunIcon, MoonIcon, DocumentArrowDownIcon } from '@heroicons/vue/24/outline'
 
 export default {
   name: 'Navigation',
@@ -74,26 +128,31 @@ export default {
     Bars3Icon,
     XMarkIcon,
     SunIcon,
-    MoonIcon
+    MoonIcon,
+    DocumentArrowDownIcon
   },
   props: {
     darkMode: Boolean
   },
   emits: ['toggle-dark-mode'],
   setup() {
+    const { locale } = useI18n()
     const mobileMenuOpen = ref(false)
     
-    const menuItems = [
-      { name: 'Accueil', href: '#accueil' },
-      { name: 'À propos', href: '#apropos' },
-      { name: 'Projets', href: '#projets' },
-      { name: 'Compétences', href: '#competences' },
-      { name: 'Contact', href: '#contact' }
-    ]
+    const menuItems = ['home', 'about', 'projects', 'skills', 'contact']
+    
+    const currentLanguage = computed(() => locale.value)
+    
+    const changeLanguage = (lang) => {
+      locale.value = lang
+      localStorage.setItem('language', lang)
+    }
     
     return {
       mobileMenuOpen,
-      menuItems
+      menuItems,
+      currentLanguage,
+      changeLanguage
     }
   }
 }
