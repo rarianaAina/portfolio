@@ -1,1 +1,21 @@
 node_modules
+dist
+.vite
+.netlify
+
+# Journaux
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Environnement local
+.env
+.env.local
+.env.*.local
+
+# Éditeurs / OS
+.DS_Store
+Thumbs.db
+.idea
+.vscode/*
+!.vscode/extensions.json

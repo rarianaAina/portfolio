@@ -1,76 +1,128 @@
 {
+  "meta": {
+    "title": "Rariana Aina Andriamiadana — Développeur full-stack",
+    "description": "Portfolio de Rariana Aina Andriamiadana, développeur full-stack spécialisé en Java, Spring Boot et développement web moderne."
+  },
   "nav": {
+    "primary": "Navigation principale",
     "home": "Accueil",
     "about": "À propos",
     "projects": "Projets",
     "skills": "Compétences",
     "contact": "Contact",
-    "cv": "CV"
+    "cv": "CV",
+    "cv_aria": "Télécharger mon CV au format PDF",
+    "open_menu": "Ouvrir le menu de navigation",
+    "close_menu": "Fermer le menu de navigation",
+    "theme_dark": "Activer le thème sombre",
+    "theme_light": "Activer le thème clair",
+    "language": "Choix de la langue",
+    "skip_to_content": "Aller au contenu principal"
   },
   "hero": {
     "greeting": "Bonjour, je suis",
-    "name": "Rariana Aina ANDRIAMIADANA",
-    "subtitle": "Développeur passionné par l'informatique, spécialisé dans le développement web moderne et les technologies Java.",
+    "name": "Rariana Aina Andriamiadana",
+    "role": "Développeur full-stack",
+    "subtitle": "Je conçois des applications web robustes et maintenables, principalement avec Java et Spring Boot côté serveur, Vue.js et React côté interface.",
     "cta_projects": "Voir mes projets",
-    "cta_contact": "Me contacter"
+    "cta_contact": "Me contacter",
+    "scroll": "Faire défiler vers la suite"
   },
   "about": {
     "title": "À propos de moi",
     "subtitle": "Passionné par le développement",
-    "description_1": "Fort de plusieurs années d'expérience dans le développement informatique, je me spécialise dans la création d'applications web robustes et performantes. Ma passion pour les nouvelles technologies me pousse constamment à apprendre et à innover.",
-    "description_2": "J'ai une expertise particulière dans l'écosystème Java avec Spring Boot, ainsi que dans les technologies front-end modernes. J'aime créer des solutions élégantes qui résolvent des problèmes réels.",
-    "description_3": "Quand je ne code pas, j'aime explorer les dernières tendances technologiques, contribuer à des projets open source, et partager mes connaissances avec la communauté des développeurs."
+    "portrait_alt": "Portrait de Rariana Aina Andriamiadana",
+    "description_1": "Développeur full-stack, je travaille sur l'ensemble de la chaîne, du modèle de données jusqu'à l'interface utilisateur. Ce qui m'intéresse le plus : transformer un besoin métier flou en une application claire et fiable.",
+    "description_2": "Mon terrain principal est l'écosystème Java avec Spring Boot, complété par des interfaces modernes en Vue.js et React. J'accorde de l'importance au code lisible, testé et documenté, ainsi qu'aux bases de données bien modélisées.",
+    "description_3": "En dehors du code, je suis les évolutions de l'écosystème, je contribue à des projets open source et j'aime partager ce que j'apprends avec la communauté.",
+    "highlight_fullstack": "Développement full-stack",
+    "highlight_architecture": "Architecture logicielle",
+    "highlight_api": "Conception d'API REST"
   },
   "projects": {
-    "title": "Mes Projets",
-    "subtitle": "Découvrez une sélection de mes projets récents qui démontrent mes compétences techniques et ma créativité.",
-    "project1": {
-      "name": "Analyse Financière Fullstack",
-      "description": "Application complète d'analyse financière avec backend Spring Boot et frontend React. Gestion des états financiers et tableaux de bord analytiques."
-    },
-    "project2": {
-      "name": "Plateforme E-commerce",
-      "description": "Plateforme e-commerce scalable avec Vue.js, Spring Boot et PostgreSQL. Système de paiement intégré avec Stripe."
-    },
-    "project3": {
-      "name": "Système de Gestion de Tâches",
-      "description": "Application collaborative de gestion de tâches en temps réel avec WebSocket. Authentification JWT et synchronisation multi-utilisateur."
-    },
-    "github": "GitHub"
+    "title": "Mes projets",
+    "subtitle": "Une sélection de projets personnels et académiques qui illustrent ma façon de concevoir et de structurer une application.",
+    "github": "Voir le code",
+    "github_aria": "Voir le code de {name} sur GitHub",
+    "view_all": "Tous mes dépôts sur GitHub",
+    "items": {
+      "financial-analysis": {
+        "name": "Analyse financière full-stack",
+        "description": "Application d'analyse financière avec un backend Spring Boot et une interface web. Gestion des états financiers et tableaux de bord analytiques."
+      },
+      "airline-management": {
+        "name": "Gestion aérienne",
+        "description": "Backend de gestion des vols et des avions avec Spring Boot. CRUD complet et modélisation de relations complexes."
+      },
+      "bakery-management": {
+        "name": "Gestion de boulangerie",
+        "description": "Système de gestion pour une boulangerie : stocks, ventes et employés, organisé en microservices."
+      },
+      "crypto-mobile": {
+        "name": "Suivi crypto mobile",
+        "description": "Application mobile de suivi des cryptomonnaies, avec historique des transactions et analyse de marché."
+      },
+      "human-hr": {
+        "name": "HumanHR — Gestion RH",
+        "description": "Plateforme de gestion des ressources humaines : employés, demandes de congés et gestion de la paie."
+      },
+      "football-analytics": {
+        "name": "Analyse football",
+        "description": "Analyse statistique de matchs de football, avec visualisation des données et modèles de prédiction."
+      },
+      "auth-module": {
+        "name": "Module d'authentification",
+        "description": "Module d'authentification sécurisé avec JWT, rôles et permissions, prêt à intégrer dans une application Node.js."
+      },
+      "real-estate-api": {
+        "name": "API immobilière",
+        "description": "API REST pour une plateforme immobilière : gestion des biens, recherche avancée et géolocalisation."
+      }
+    }
   },
   "skills": {
-    "title": "Mes Compétences",
-    "subtitle": "Voici les technologies et outils que je maîtrise pour créer des solutions innovantes.",
-    "main_title": "Technologies Principales",
+    "title": "Mes compétences",
+    "subtitle": "Les technologies et outils que j'utilise au quotidien pour concevoir et livrer des applications.",
+    "main_title": "Technologies principales",
     "backend": "Backend",
     "frontend": "Frontend",
-    "database": "Base de données",
-    "devops": "DevOps",
+    "database": "Bases de données",
+    "devops": "DevOps & outillage",
     "tools": "Outils",
-    "soft_skills": "Soft Skills",
-    "expert": "Expert",
-    "advanced": "Avancé",
-    "intermediate": "Intermédiaire"
+    "soft_skills": "Compétences transverses",
+    "soft": {
+      "problem_solving": "Résolution de problèmes",
+      "teamwork": "Travail en équipe",
+      "communication": "Communication",
+      "autonomy": "Autonomie",
+      "curiosity": "Curiosité technique"
+    }
   },
   "contact": {
-    "title": "Contactez-moi",
-    "subtitle": "Vous avez un projet en tête ? Une question ? N'hésitez pas à me contacter !",
+    "title": "Me contacter",
+    "subtitle": "Un projet, une opportunité ou simplement une question ? Écrivez-moi, je réponds rapidement.",
     "stay_connected": "Restons en contact",
-    "email": "Email",
+    "email": "E-mail",
     "github": "GitHub",
     "linkedin": "LinkedIn",
-    "follow": "Suivez-moi",
+    "linkedin_value": "Profil LinkedIn",
+    "follow": "Me suivre",
+    "form_title": "Envoyer un message",
     "form_name": "Nom complet",
     "form_name_placeholder": "Votre nom complet",
-    "form_email": "Email",
-    "form_email_placeholder": "votre.email[at]exemple.com",
+    "form_email": "E-mail",
+    "form_email_placeholder": "vous{'@'}exemple.com",
     "form_subject": "Sujet",
     "form_subject_placeholder": "Sujet de votre message",
     "form_message": "Message",
-    "form_message_placeholder": "Votre message ici",
-    "form_submit": "Envoyer le message"
+    "form_message_placeholder": "Votre message",
+    "form_submit": "Envoyer le message",
+    "form_sending": "Envoi en cours…",
+    "form_success": "Merci, votre message a bien été envoyé. Je vous réponds au plus vite.",
+    "form_error": "L'envoi a échoué. Vous pouvez me joindre directement à {email}."
   },
   "footer": {
-    "copyright": "© 2025 Rariana Aina ANDRIAMIADANA. Tous droits réservés."
+    "copyright": "© {year} Rariana Aina Andriamiadana. Tous droits réservés.",
+    "built_with": "Conçu avec Vue.js et Tailwind CSS."
   }
 }

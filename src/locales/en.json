@@ -1,76 +1,128 @@
 {
+  "meta": {
+    "title": "Rariana Aina Andriamiadana — Full-stack developer",
+    "description": "Portfolio of Rariana Aina Andriamiadana, a full-stack developer specialising in Java, Spring Boot and modern web development."
+  },
   "nav": {
+    "primary": "Main navigation",
     "home": "Home",
     "about": "About",
     "projects": "Projects",
     "skills": "Skills",
     "contact": "Contact",
-    "cv": "CV"
+    "cv": "Résumé",
+    "cv_aria": "Download my résumé as a PDF",
+    "open_menu": "Open navigation menu",
+    "close_menu": "Close navigation menu",
+    "theme_dark": "Switch to dark theme",
+    "theme_light": "Switch to light theme",
+    "language": "Language selection",
+    "skip_to_content": "Skip to main content"
   },
   "hero": {
-    "greeting": "Hello, I'm",
-    "name": "Rariana Aina ANDRIAMIADANA",
-    "subtitle": "Passionate developer specialized in modern web development and Java technologies.",
+    "greeting": "Hi, I'm",
+    "name": "Rariana Aina Andriamiadana",
+    "role": "Full-stack developer",
+    "subtitle": "I build robust, maintainable web applications — mainly with Java and Spring Boot on the server side, Vue.js and React on the front end.",
     "cta_projects": "View my projects",
-    "cta_contact": "Contact me"
+    "cta_contact": "Get in touch",
+    "scroll": "Scroll to the next section"
   },
   "about": {
     "title": "About me",
-    "subtitle": "Passionate about development",
-    "description_1": "With several years of experience in software development, I specialize in creating robust and high-performance web applications. My passion for new technologies constantly pushes me to learn and innovate.",
-    "description_2": "I have particular expertise in the Java ecosystem with Spring Boot, as well as in modern front-end technologies. I love creating elegant solutions that solve real problems.",
-    "description_3": "When I'm not coding, I enjoy exploring the latest technology trends, contributing to open source projects, and sharing my knowledge with the developer community."
+    "subtitle": "Driven by building things that work",
+    "portrait_alt": "Portrait of Rariana Aina Andriamiadana",
+    "description_1": "As a full-stack developer I work across the whole chain, from the data model to the user interface. What I enjoy most is turning a fuzzy business need into a clear, reliable application.",
+    "description_2": "My main ground is the Java ecosystem with Spring Boot, paired with modern front ends in Vue.js and React. I care about readable, tested and documented code, and about well-designed databases.",
+    "description_3": "Away from the editor I follow how the ecosystem evolves, contribute to open source projects, and enjoy sharing what I learn with the community.",
+    "highlight_fullstack": "Full-stack development",
+    "highlight_architecture": "Software architecture",
+    "highlight_api": "REST API design"
   },
   "projects": {
-    "title": "My Projects",
-    "subtitle": "Discover a selection of my recent projects that showcase my technical skills and creativity.",
-    "project1": {
-      "name": "Fullstack Financial Analysis",
-      "description": "Complete financial analysis application with Spring Boot backend and React frontend. Financial statements management and analytical dashboards."
-    },
-    "project2": {
-      "name": "E-commerce Platform",
-      "description": "Scalable e-commerce platform with Vue.js, Spring Boot and PostgreSQL. Integrated payment system with Stripe."
-    },
-    "project3": {
-      "name": "Task Management System",
-      "description": "Real-time collaborative task management application with WebSocket. JWT authentication and multi-user synchronization."
-    },
-    "github": "GitHub"
+    "title": "My projects",
+    "subtitle": "A selection of personal and academic projects that show how I design and structure an application.",
+    "github": "View code",
+    "github_aria": "View the source code of {name} on GitHub",
+    "view_all": "All my repositories on GitHub",
+    "items": {
+      "financial-analysis": {
+        "name": "Full-stack financial analysis",
+        "description": "Financial analysis application with a Spring Boot backend and a web interface. Financial statement management and analytical dashboards."
+      },
+      "airline-management": {
+        "name": "Airline management",
+        "description": "Flight and aircraft management backend built with Spring Boot. Full CRUD and complex relational modelling."
+      },
+      "bakery-management": {
+        "name": "Bakery management",
+        "description": "Management system for a bakery: inventory, sales and staff, organised as microservices."
+      },
+      "crypto-mobile": {
+        "name": "Crypto tracker (mobile)",
+        "description": "Mobile application for tracking cryptocurrencies, with transaction history and market analysis."
+      },
+      "human-hr": {
+        "name": "HumanHR — HR management",
+        "description": "Human resources platform covering employees, leave requests and payroll management."
+      },
+      "football-analytics": {
+        "name": "Football analytics",
+        "description": "Statistical analysis of football matches, with data visualisation and prediction models."
+      },
+      "auth-module": {
+        "name": "Authentication module",
+        "description": "Secure authentication module with JWT, roles and permissions, ready to plug into any Node.js application."
+      },
+      "real-estate-api": {
+        "name": "Real-estate API",
+        "description": "REST API for a real-estate platform: property management, advanced search and geolocation."
+      }
+    }
   },
   "skills": {
-    "title": "My Skills",
-    "subtitle": "Here are the technologies and tools I master to create innovative solutions.",
-    "main_title": "Main Technologies",
+    "title": "My skills",
+    "subtitle": "The technologies and tools I use day to day to design and ship applications.",
+    "main_title": "Core technologies",
     "backend": "Backend",
     "frontend": "Frontend",
-    "database": "Database",
-    "devops": "DevOps",
+    "database": "Databases",
+    "devops": "DevOps & tooling",
     "tools": "Tools",
-    "soft_skills": "Soft Skills",
-    "expert": "Expert",
-    "advanced": "Advanced",
-    "intermediate": "Intermediate"
+    "soft_skills": "Transferable skills",
+    "soft": {
+      "problem_solving": "Problem solving",
+      "teamwork": "Teamwork",
+      "communication": "Communication",
+      "autonomy": "Autonomy",
+      "curiosity": "Technical curiosity"
+    }
   },
   "contact": {
-    "title": "Contact me",
-    "subtitle": "Do you have a project in mind? A question? Feel free to contact me!",
-    "stay_connected": "Let's stay connected",
+    "title": "Get in touch",
+    "subtitle": "A project, an opportunity, or simply a question? Send me a message — I reply quickly.",
+    "stay_connected": "Let's stay in touch",
     "email": "Email",
     "github": "GitHub",
     "linkedin": "LinkedIn",
+    "linkedin_value": "LinkedIn profile",
     "follow": "Follow me",
+    "form_title": "Send a message",
     "form_name": "Full name",
     "form_name_placeholder": "Your full name",
     "form_email": "Email",
-    "form_email_placeholder": "your.email[at]example.com",
+    "form_email_placeholder": "you{'@'}example.com",
     "form_subject": "Subject",
     "form_subject_placeholder": "Subject of your message",
     "form_message": "Message",
-    "form_message_placeholder": "Your message here",
-    "form_submit": "Send message"
+    "form_message_placeholder": "Your message",
+    "form_submit": "Send message",
+    "form_sending": "Sending…",
+    "form_success": "Thank you, your message has been sent. I'll get back to you shortly.",
+    "form_error": "Sending failed. You can reach me directly at {email}."
   },
   "footer": {
-    "copyright": "© 2025 Rariana Aina ANDRIAMIADANA. All rights reserved."
+    "copyright": "© {year} Rariana Aina Andriamiadana. All rights reserved.",
+    "built_with": "Built with Vue.js and Tailwind CSS."
   }
 }
