@@ -3,121 +3,112 @@
     <div class="container-max">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          {{ $t('skills.title') }}
+          {{ t('skills.title') }}
         </h2>
-        <div class="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto mb-6"></div>
+        <div
+          class="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto mb-6"
+        />
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          {{ $t('skills.subtitle') }}
+          {{ t('skills.subtitle') }}
         </p>
       </div>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div 
-          v-for="category in skillCategories" 
-          :key="category.name"
+
+      <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <li
+          v-for="category in skillCategories"
+          :key="category.key"
           class="card p-6 animate-slide-up"
         >
           <div class="flex items-center mb-6">
-            <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center text-white text-xl mr-4">
+            <div
+              class="w-12 h-12 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center text-white text-xl mr-4"
+              aria-hidden="true"
+            >
               {{ category.icon }}
             </div>
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              {{ category.name }}
+              {{ t(`skills.${category.key}`) }}
             </h3>
           </div>
-          
-          <div class="flex flex-wrap gap-3">
-            <span 
-              v-for="skill in category.skills" 
-              :key="skill"
-              class="skill-badge"
-            >
-              {{ skill }}
-            </span>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Main Skills Highlight -->
+
+          <ul class="flex flex-wrap gap-3">
+            <li v-for="skill in category.skills" :key="skill" class="skill-badge">
+              {{ category.translate ? t(`skills.soft.${skill}`) : skill }}
+            </li>
+          </ul>
+        </li>
+      </ul>
+
       <div class="mt-16">
-        <h3 class="text-2xl font-semibold text-gray-900 dark:text-white text-center mb-8">
-          {{ $t('skills.main_title') }}
+        <h3
+          class="text-2xl font-semibold text-gray-900 dark:text-white text-center mb-8"
+        >
+          {{ t('skills.main_title') }}
         </h3>
-        <div class="flex flex-wrap justify-center gap-4">
-          <div 
-            v-for="(skill, index) in mainSkills" 
+        <ul class="flex flex-wrap justify-center gap-4">
+          <li
+            v-for="skill in mainSkills"
             :key="skill.name"
-            class="group"
-            :style="{ animationDelay: `${index * 0.1}s` }"
+            class="bg-white dark:bg-gray-700 rounded-xl px-6 py-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100 dark:border-gray-600 text-center w-32"
           >
-            <div class="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-100 dark:border-gray-600">
-              <div class="text-4xl mb-3 text-center">{{ skill.icon }}</div>
-              <div class="text-center">
-                <h4 class="font-semibold text-gray-900 dark:text-white mb-1">{{ skill.name }}</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-300">{{ skill.level }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
+            <div class="text-3xl mb-2" aria-hidden="true">{{ skill.icon }}</div>
+            <p class="font-semibold text-gray-900 dark:text-white text-sm">
+              {{ skill.name }}
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 </template>
 
-<script>
+<script setup>
 import { useI18n } from 'vue-i18n'
 
-export default {
-  name: 'SkillsSection',
-  setup() {
-    const { t } = useI18n()
-    
-    const skillCategories = [
-      {
-        name: t('skills.backend'),
-        icon: '⚙️',
-        skills: ['Java', 'Spring Boot', 'Spring Security', 'JPA/Hibernate', 'Maven']
-      },
-      {
-        name: t('skills.frontend'),
-        icon: '🎨',
-        skills: ['Vue.js', 'React', 'JavaScript', 'Tailwind CSS', 'HTML5/CSS3']
-      },
-      {
-        name: t('skills.database'),
-        icon: '💾',
-        skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'SQL']
-      },
-      {
-        name: t('skills.devops'),
-        icon: '🔧',
-        skills: ['Docker', 'Git', 'GitHub Actions', 'Linux', 'Nginx']
-      },
-      {
-        name: t('skills.tools'),
-        icon: '🛠️',
-        skills: ['IntelliJ IDEA', 'VS Code', 'Postman', 'Figma', 'Slack']
-      },
-      {
-        name: t('skills.soft_skills'),
-        icon: '🧠',
-        skills: ['Problem Solving', 'Team Work', 'Communication', 'Leadership', 'Creativity']
-      }
-    ]
-    
-    const mainSkills = [
-      { name: 'Java', icon: '☕', level: t('skills.expert') },
-      { name: 'Spring Boot', icon: '🍃', level: t('skills.expert') },
-      { name: 'PostgreSQL', icon: '🐘', level: t('skills.advanced') },
-      { name: 'Tailwind CSS', icon: '🎨', level: t('skills.expert') },
-      { name: 'Docker', icon: '🐳', level: t('skills.intermediate') },
-      { name: 'Git', icon: '📝', level: t('skills.expert') }
-    ]
-    
-    return {
-      skillCategories,
-      mainSkills
-    }
+const { t } = useI18n()
+
+// `key` référence une clé de traduction ; les noms de technologies ne se traduisent pas.
+const skillCategories = [
+  {
+    key: 'backend',
+    icon: '⚙️',
+    skills: ['Java', 'Spring Boot', 'Spring Security', 'JPA/Hibernate', 'Maven']
+  },
+  {
+    key: 'frontend',
+    icon: '🎨',
+    skills: ['Vue.js', 'React', 'JavaScript', 'Tailwind CSS', 'HTML5/CSS3']
+  },
+  {
+    key: 'database',
+    icon: '💾',
+    skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'SQL']
+  },
+  {
+    key: 'devops',
+    icon: '🔧',
+    skills: ['Docker', 'Git', 'GitHub Actions', 'Linux', 'Nginx']
+  },
+  {
+    key: 'tools',
+    icon: '🛠️',
+    skills: ['IntelliJ IDEA', 'VS Code', 'Postman', 'Figma']
+  },
+  {
+    key: 'soft_skills',
+    icon: '🧠',
+    translate: true,
+    skills: ['problem_solving', 'teamwork', 'communication', 'autonomy', 'curiosity']
   }
-}
+]
+
+const mainSkills = [
+  { name: 'Java', icon: '☕' },
+  { name: 'Spring Boot', icon: '🍃' },
+  { name: 'Vue.js', icon: '💚' },
+  { name: 'PostgreSQL', icon: '🐘' },
+  { name: 'Tailwind CSS', icon: '🎨' },
+  { name: 'Docker', icon: '🐳' },
+  { name: 'Git', icon: '📝' }
+]
 </script>

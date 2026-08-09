@@ -1,115 +1,131 @@
 <template>
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 transition-colors duration-200">
+  <nav
+    class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 transition-colors duration-200"
+    :aria-label="t('nav.primary')"
+  >
     <div class="container-max section-padding">
       <div class="flex items-center justify-between h-16">
-        <!-- Logo -->
-        <div class="font-bold text-xl text-primary-600 dark:text-primary-400">
+        <a
+          href="#home"
+          class="font-bold text-xl text-primary-600 dark:text-primary-400 rounded focus-ring"
+        >
           R.A.A
-        </div>
-        
-        <!-- Desktop Menu -->
+        </a>
+
+        <!-- Menu bureau -->
         <div class="hidden md:flex items-center space-x-4">
-          <a 
-            v-for="item in menuItems" 
+          <a
+            v-for="item in menuItems"
             :key="item"
-            :href="`#${item}`" 
-            class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors duration-200 text-sm"
+            :href="`#${item}`"
+            class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors duration-200 text-sm rounded focus-ring"
           >
-            {{ $t(`nav.${item}`) }}
+            {{ t(`nav.${item}`) }}
           </a>
-          
-          <!-- Download CV Button -->
-          <a 
-            href="/CV_Rariana Aina ANDRIAMIADANA.pdf" 
-            download="CV_Rariana Aina ANDRIAMIADANA.pdf"
-            class="flex items-center gap-2 px-3 py-2 rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-medium transition-colors duration-200 text-sm"
+
+          <a
+            :href="site.cvPath"
+            :download="site.cvFileName"
+            :aria-label="t('nav.cv_aria')"
+            class="flex items-center gap-2 px-3 py-2 rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-medium transition-colors duration-200 text-sm focus-ring"
           >
-            <DocumentArrowDownIcon class="h-4 w-4" />
-            {{ $t('nav.cv') }}
+            <DocumentArrowDownIcon class="h-4 w-4" aria-hidden="true" />
+            {{ t('nav.cv') }}
           </a>
-          
-          <!-- Language Selector -->
-          <div class="flex gap-2">
+
+          <div class="flex gap-2" role="group" :aria-label="t('nav.language')">
             <button
-              @click="changeLanguage('fr')"
-              :class="['px-3 py-2 rounded-lg font-medium transition-colors duration-200 text-sm', currentLanguage === 'fr' ? 'bg-primary-600 text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-primary-600']"
+              v-for="language in LANGUAGES"
+              :key="language.code"
+              type="button"
+              :aria-pressed="locale === language.code"
+              :title="language.label"
+              :class="[
+                'px-3 py-2 rounded-lg font-medium transition-colors duration-200 text-sm focus-ring',
+                locale === language.code
+                  ? 'bg-primary-600 text-white'
+                  : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-primary-600'
+              ]"
+              @click="changeLanguage(language.code)"
             >
-              FR
-            </button>
-            <button
-              @click="changeLanguage('en')"
-              :class="['px-3 py-2 rounded-lg font-medium transition-colors duration-200 text-sm', currentLanguage === 'en' ? 'bg-primary-600 text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-primary-600']"
-            >
-              EN
+              {{ language.short }}
             </button>
           </div>
-          
-          <!-- Dark Mode Toggle -->
-          <button 
-            @click="$emit('toggle-dark-mode')"
-            class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
+
+          <button
+            type="button"
+            :aria-label="isDark ? t('nav.theme_light') : t('nav.theme_dark')"
+            class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 focus-ring"
+            @click="toggleTheme"
           >
-            <SunIcon v-if="darkMode" class="h-5 w-5" />
-            <MoonIcon v-else class="h-5 w-5" />
+            <SunIcon v-if="isDark" class="h-5 w-5" aria-hidden="true" />
+            <MoonIcon v-else class="h-5 w-5" aria-hidden="true" />
           </button>
         </div>
-        
-        <!-- Mobile Menu Button -->
+
+        <!-- Menu mobile -->
         <div class="md:hidden flex items-center space-x-1">
-          <button 
-            @click="$emit('toggle-dark-mode')"
-            class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
+          <button
+            type="button"
+            :aria-label="isDark ? t('nav.theme_light') : t('nav.theme_dark')"
+            class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 focus-ring"
+            @click="toggleTheme"
           >
-            <SunIcon v-if="darkMode" class="h-5 w-5" />
-            <MoonIcon v-else class="h-5 w-5" />
+            <SunIcon v-if="isDark" class="h-5 w-5" aria-hidden="true" />
+            <MoonIcon v-else class="h-5 w-5" aria-hidden="true" />
           </button>
-          
-          <button 
+
+          <button
+            type="button"
+            aria-controls="mobile-menu"
+            :aria-expanded="mobileMenuOpen"
+            :aria-label="mobileMenuOpen ? t('nav.close_menu') : t('nav.open_menu')"
+            class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 transition-colors duration-200 focus-ring"
             @click="mobileMenuOpen = !mobileMenuOpen"
-            class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 transition-colors duration-200"
           >
-            <Bars3Icon v-if="!mobileMenuOpen" class="h-6 w-6" />
-            <XMarkIcon v-else class="h-6 w-6" />
+            <Bars3Icon v-if="!mobileMenuOpen" class="h-6 w-6" aria-hidden="true" />
+            <XMarkIcon v-else class="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
       </div>
-      
-      <!-- Mobile Menu -->
-      <div v-if="mobileMenuOpen" class="md:hidden py-4 animate-fade-in space-y-2">
-        <a 
-          v-for="item in menuItems" 
+
+      <div v-if="mobileMenuOpen" id="mobile-menu" class="md:hidden py-4 animate-fade-in space-y-2">
+        <a
+          v-for="item in menuItems"
           :key="item"
           :href="`#${item}`"
+          class="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors duration-200 rounded focus-ring"
           @click="mobileMenuOpen = false"
-          class="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors duration-200"
         >
-          {{ $t(`nav.${item}`) }}
+          {{ t(`nav.${item}`) }}
         </a>
-        
-        <!-- Download CV Button Mobile -->
-        <a 
-          href="/CV_Rariana Aina ANDRIAMIADANA.pdf" 
-          download="CV_Rariana Aina ANDRIAMIADANA.pdf"
+
+        <a
+          :href="site.cvPath"
+          :download="site.cvFileName"
+          :aria-label="t('nav.cv_aria')"
+          class="flex items-center gap-2 mt-4 px-4 py-2 rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-medium transition-colors duration-200 w-full justify-center focus-ring"
           @click="mobileMenuOpen = false"
-          class="flex items-center gap-2 mt-4 px-4 py-2 rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-medium transition-colors duration-200 w-full justify-center"
         >
-          <DocumentArrowDownIcon class="h-5 w-5" />
-          {{ $t('nav.cv') }}
+          <DocumentArrowDownIcon class="h-5 w-5" aria-hidden="true" />
+          {{ t('nav.cv') }}
         </a>
-        
-        <!-- Language Selector Mobile -->
-        <div class="flex gap-2 mt-4">
+
+        <div class="flex gap-2 mt-4" role="group" :aria-label="t('nav.language')">
           <button
-            @click="changeLanguage('fr'); mobileMenuOpen = false"
-            :class="['flex-1 px-3 py-2 rounded-lg font-medium transition-colors duration-200', currentLanguage === 'fr' ? 'bg-primary-600 text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400']"
+            v-for="language in LANGUAGES"
+            :key="language.code"
+            type="button"
+            :aria-pressed="locale === language.code"
+            :class="[
+              'flex-1 px-3 py-2 rounded-lg font-medium transition-colors duration-200 focus-ring',
+              locale === language.code
+                ? 'bg-primary-600 text-white'
+                : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
+            ]"
+            @click="changeLanguage(language.code); mobileMenuOpen = false"
           >
-            Français
-          </button>
-          <button
-            @click="changeLanguage('en'); mobileMenuOpen = false"
-            :class="['flex-1 px-3 py-2 rounded-lg font-medium transition-colors duration-200', currentLanguage === 'en' ? 'bg-primary-600 text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400']"
-          >
-            English
+            {{ language.label }}
           </button>
         </div>
       </div>
@@ -117,43 +133,28 @@
   </nav>
 </template>
 
-<script>
-import { ref, computed } from 'vue'
+<script setup>
+import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { Bars3Icon, XMarkIcon, SunIcon, MoonIcon, DocumentArrowDownIcon } from '@heroicons/vue/24/outline'
+import {
+  Bars3Icon,
+  XMarkIcon,
+  SunIcon,
+  MoonIcon,
+  DocumentArrowDownIcon
+} from '@heroicons/vue/24/outline'
+import { site } from '../data/site'
+import { LANGUAGES, LOCALE_STORAGE_KEY } from '../i18n'
+import { useTheme } from '../composables/useTheme'
 
-export default {
-  name: 'Navigation',
-  components: {
-    Bars3Icon,
-    XMarkIcon,
-    SunIcon,
-    MoonIcon,
-    DocumentArrowDownIcon
-  },
-  props: {
-    darkMode: Boolean
-  },
-  emits: ['toggle-dark-mode'],
-  setup() {
-    const { locale } = useI18n()
-    const mobileMenuOpen = ref(false)
-    
-    const menuItems = ['home', 'about', 'projects', 'skills', 'contact']
-    
-    const currentLanguage = computed(() => locale.value)
-    
-    const changeLanguage = (lang) => {
-      locale.value = lang
-      localStorage.setItem('language', lang)
-    }
-    
-    return {
-      mobileMenuOpen,
-      menuItems,
-      currentLanguage,
-      changeLanguage
-    }
-  }
+const { t, locale } = useI18n()
+const { isDark, toggleTheme } = useTheme()
+
+const mobileMenuOpen = ref(false)
+const menuItems = ['home', 'about', 'projects', 'skills', 'contact']
+
+const changeLanguage = (code) => {
+  locale.value = code
+  localStorage.setItem(LOCALE_STORAGE_KEY, code)
 }
 </script>
