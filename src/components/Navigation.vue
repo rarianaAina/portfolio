@@ -13,7 +13,7 @@
         </a>
 
         <!-- Menu bureau -->
-        <div class="hidden md:flex items-center space-x-4">
+        <div class="hidden lg:flex items-center space-x-4">
           <a
             v-for="item in menuItems"
             :key="item"
@@ -64,7 +64,7 @@
         </div>
 
         <!-- Menu mobile -->
-        <div class="md:hidden flex items-center space-x-1">
+        <div class="lg:hidden flex items-center space-x-1">
           <button
             type="button"
             :aria-label="isDark ? t('nav.theme_light') : t('nav.theme_dark')"
@@ -89,7 +89,7 @@
         </div>
       </div>
 
-      <div v-if="mobileMenuOpen" id="mobile-menu" class="md:hidden py-4 animate-fade-in space-y-2">
+      <div v-if="mobileMenuOpen" id="mobile-menu" class="lg:hidden py-4 animate-fade-in space-y-2">
         <a
           v-for="item in menuItems"
           :key="item"
@@ -151,7 +151,7 @@ const { t, locale } = useI18n()
 const { isDark, toggleTheme } = useTheme()
 
 const mobileMenuOpen = ref(false)
-const menuItems = ['home', 'about', 'projects', 'skills', 'contact']
+const menuItems = ['home', 'about', 'experience', 'projects', 'skills', 'contact']
 
 const changeLanguage = (code) => {
   locale.value = code

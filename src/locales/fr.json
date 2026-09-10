@@ -1,12 +1,13 @@
 {
   "meta": {
-    "title": "Rariana Aina Andriamiadana — Développeur full-stack",
-    "description": "Portfolio de Rariana Aina Andriamiadana, développeur full-stack spécialisé en Java, Spring Boot et développement web moderne."
+    "title": "Rariana Aina Andriamiadana — Consultant Odoo fonctionnel & technique",
+    "description": "Consultant Odoo fonctionnel et technique : paramétrage, support utilisateur, recette, formation et développement de modules Odoo 19 pour des PME."
   },
   "nav": {
     "primary": "Navigation principale",
     "home": "Accueil",
     "about": "À propos",
+    "experience": "Parcours",
     "projects": "Projets",
     "skills": "Compétences",
     "contact": "Contact",
@@ -22,29 +23,220 @@
   "hero": {
     "greeting": "Bonjour, je suis",
     "name": "Rariana Aina Andriamiadana",
-    "role": "Développeur full-stack",
-    "subtitle": "Je conçois des applications web robustes et maintenables, principalement avec Java et Spring Boot côté serveur, Vue.js et React côté interface.",
-    "cta_projects": "Voir mes projets",
+    "role": "Consultant Odoo fonctionnel & technique",
+    "subtitle": "J'accompagne des PME dans le paramétrage, le support et l'évolution de leur ERP Odoo : cadrage des besoins, configuration des applications, imports de données, recette et formation des utilisateurs — et développement de modules sur mesure quand le standard ne suffit pas.",
+    "tags": [
+      "Odoo 19 Community & Enterprise",
+      "Ventes · Achats · Stock · Point de vente",
+      "Comptabilité · RH · Paie"
+    ],
+    "cta_projects": "Voir mes projets Odoo",
     "cta_contact": "Me contacter",
     "scroll": "Faire défiler vers la suite"
   },
   "about": {
     "title": "À propos de moi",
-    "subtitle": "Passionné par le développement",
+    "subtitle": "Du besoin métier à l'ERP qui tourne",
     "portrait_alt": "Portrait de Rariana Aina Andriamiadana",
-    "description_1": "Développeur full-stack, je travaille sur l'ensemble de la chaîne, du modèle de données jusqu'à l'interface utilisateur. Ce qui m'intéresse le plus : transformer un besoin métier flou en une application claire et fiable.",
-    "description_2": "Mon terrain principal est l'écosystème Java avec Spring Boot, complété par des interfaces modernes en Vue.js et React. J'accorde de l'importance au code lisible, testé et documenté, ainsi qu'aux bases de données bien modélisées.",
-    "description_3": "En dehors du code, je suis les évolutions de l'écosystème, je contribue à des projets open source et j'aime partager ce que j'apprends avec la communauté.",
-    "highlight_fullstack": "Développement full-stack",
-    "highlight_architecture": "Architecture logicielle",
-    "highlight_api": "Conception d'API REST"
+    "description_1": "De juin à août 2026, j'ai travaillé sur Odoo chez KASIA Consulting, un cabinet de conseil et d'intégration. J'y suis intervenu auprès de PME de secteurs très différents — distribution de téléphonie, conseil, transit maritime, industrie — de l'atelier de cadrage jusqu'au support après la mise en production.",
+    "description_2": "Avant Odoo, j'ai passé près de deux ans au support client technique, puis deux ans à gérer les comptes utilisateurs, les habilitations et la formation des nouveaux collaborateurs. J'en garde des réflexes utiles au quotidien : écouter l'utilisateur, reproduire le problème, expliquer la solution simplement.",
+    "description_3": "Mon parcours de développeur (Java, .NET, Vue.js, React, SQL) me permet d'aller plus loin que le paramétrage quand c'est nécessaire : modules Python, vues XML, rapports QWeb, imports et contrôles de données en PostgreSQL.",
+    "highlight_functional": "Paramétrage fonctionnel Odoo",
+    "highlight_support": "Support et formation des utilisateurs",
+    "highlight_dev": "Développement Odoo (Python, XML, QWeb)",
+    "languages_label": "Langues :",
+    "languages": "malgache, français, anglais"
+  },
+  "experience": {
+    "title": "Mon parcours",
+    "subtitle": "Du support utilisateur au conseil Odoo, en passant par le développement d'applications métier.",
+    "education_title": "Formation",
+    "cv_note": "Le détail complet de mon parcours figure dans mon CV.",
+    "cv_link": "Télécharger le CV",
+    "items": [
+      {
+        "role": "Développeur Odoo / Business Analyst Odoo",
+        "org": "KASIA Consulting",
+        "period": "Juin 2026 – août 2026",
+        "bullets": [
+          "Cadrage fonctionnel et analyse des besoins avec les clients : ateliers, comptes rendus, questions de clarification.",
+          "Paramétrage d'Odoo 19 (Community et Enterprise) : ventes, achats, stock multi-entrepôts, point de vente, facturation, comptabilité, employés, paie, notes de frais.",
+          "Imports de données (articles, stocks, commandes fournisseurs) et contrôle de leur cohérence avant validation.",
+          "Recette interne puis recette avec le client avant chaque mise en production.",
+          "Support utilisateur et traitement des retours clients après la mise en production, suivi des anomalies jusqu'à leur correction.",
+          "Formation des utilisateurs (achats, ventes) et rédaction de procédures pas à pas.",
+          "Développement de modules spécifiques quand le standard ne suffit pas : Python, XML, QWeb, OWL."
+        ]
+      },
+      {
+        "role": "Développeur fullstack (stage puis embauche)",
+        "org": "OPTIMADA",
+        "period": "Sept. 2025 – mai 2026",
+        "bullets": [
+          "Maintenance corrective et évolutive d'une application RH : salariés, congés, pointages, plannings, recrutements, circuits de validation.",
+          "Portail client en Java Spring Boot et React, synchronisé avec Sage 100cloud CRM (clients, contacts, produits, tickets de support).",
+          "API REST, synchronisations de données SQL Server, notifications e-mail et WhatsApp, tableaux de bord.",
+          "Participation à l'analyse des besoins, aux tests et aux déploiements."
+        ]
+      },
+      {
+        "role": "Logs Administrator (GIR)",
+        "org": "Webhelp Madagascar",
+        "period": "Août 2022 – août 2024",
+        "bullets": [
+          "Gestion et contrôle des comptes utilisateurs, des habilitations et des accès aux systèmes d'information.",
+          "Formation des nouveaux collaborateurs aux règles de sécurité et de conformité.",
+          "Accompagnement des audits clients et suivi des actions correctives."
+        ]
+      },
+      {
+        "role": "Customer Advisor",
+        "org": "Webhelp Madagascar",
+        "period": "Déc. 2020 – août 2022",
+        "bullets": [
+          "Assistance aux clients rencontrant des problèmes techniques et informatiques."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Licence en Informatique",
+        "school": "IT University, Andoharanofotsy",
+        "period": "2018 – 2026"
+      }
+    ]
   },
   "projects": {
-    "title": "Mes projets",
-    "subtitle": "Une sélection de projets personnels et académiques qui illustrent ma façon de concevoir et de structurer une application.",
+    "title": "Projets Odoo",
+    "subtitle": "Des projets menés pour des PME, présentés de façon anonyme. Les captures proviennent de bases de démonstration aux données fictives.",
+    "context": "Le besoin",
+    "functional": "Paramétrage et accompagnement",
+    "technical": "Développement",
+    "apps": "Applications Odoo",
+    "stack": "Technologies",
+    "open_gallery": "Voir les captures ({count})",
+    "open_shot": "Agrandir la capture : {caption}",
+    "gallery_label": "Captures du projet {name}",
+    "previous": "Capture précédente",
+    "next": "Capture suivante",
+    "close": "Fermer",
+    "counter": "{current} / {total}",
     "github": "Voir le code",
     "github_aria": "Voir le code de {name} sur GitHub",
     "view_all": "Tous mes dépôts sur GitHub",
+    "other_title": "Autres projets",
+    "other_subtitle": "Projets personnels et académiques antérieurs, en Java, JavaScript et Python.",
+    "odoo_apps": {
+      "sales": "Ventes",
+      "purchase": "Achats",
+      "inventory": "Inventaire",
+      "pos": "Point de vente",
+      "invoicing": "Facturation",
+      "accounting": "Comptabilité",
+      "employees": "Employés",
+      "payroll": "Paie",
+      "expenses": "Notes de frais"
+    },
+    "odoo": {
+      "mobile-money": {
+        "name": "Paiements Mobile Money en caisse",
+        "sector": "Modules publics · Point de vente",
+        "repo_reference": "Module de saisie",
+        "repo_reconciliation": "Module de rapprochement",
+        "context": "À Madagascar, une grande partie des ventes en boutique se paie par MVola, Orange Money ou Airtel Money. Sans référence de transaction saisie en caisse, impossible de rapprocher les encaissements avec le relevé de l'opérateur.",
+        "functional": [
+          "Référence de transaction exigée pour chaque paiement Mobile Money, téléphone du payeur obligatoire ou facultatif selon le réglage, puis imprimés sur le ticket.",
+          "Détection des références déjà utilisées, avec trois comportements au choix : autoriser, avertir ou refuser.",
+          "Import du relevé de l'opérateur et rapprochement automatique : paiements confirmés, écarts de montant, manquants au relevé, non saisis en caisse.",
+          "Rapport de contrôle à faire signer par le responsable."
+        ],
+        "technical": [
+          "Deux modules Odoo 19 : saisie en caisse (OWL, fonctionne aussi hors connexion) et rapprochement (modèles, assistant d'import, rapport QWeb).",
+          "Lecture des relevés CSV, XLSX et XLS, avec des profils d'import adaptés à chaque opérateur.",
+          "Tests automatisés Python et test d'interface, traduction française."
+        ],
+        "shots": {
+          "reference-entry": "La caisse demande le numéro de transaction Mobile Money au moment du paiement ; le numéro du payeur est facultatif.",
+          "reused-reference": "Une référence déjà utilisée sur une autre vente déclenche un avertissement avant la validation.",
+          "statement-missing": "Le relevé de l'opérateur est rapproché des paiements de caisse : manquants, hors caisse, écarts et confirmés.",
+          "amount-differences": "Onglet des écarts entre le montant reçu par l'opérateur et le montant enregistré en caisse.",
+          "control-report": "Rapport de contrôle imprimable : synthèse par résultat, puis détail des absents, des non-enregistrés et des écarts."
+        }
+      },
+      "phone-retail": {
+        "name": "Stock et caisse pour un revendeur de téléphones",
+        "sector": "Distribution · plusieurs boutiques",
+        "context": "Un revendeur de téléphones importés, avec plusieurs boutiques, doit suivre chaque appareil individuellement — IMEI, capacité, couleur, état de la batterie, garantie — de l'achat à la vente, en passant par les transferts entre boutiques.",
+        "functional": [
+          "Cadrage avec le client : achats en devises, valorisation FIFO, entrepôts, revendeurs, moyens de paiement (TPE, espèces, Mobile Money).",
+          "Paramétrage des achats, du stock multi-boutiques, du point de vente et de la facturation.",
+          "Recette avec le client et formation des utilisateurs."
+        ],
+        "technical": [
+          "Suivi par IMEI avec les caractéristiques de chaque appareil, import Excel des arrivages et des commandes fournisseurs.",
+          "Transferts entre boutiques par scan d'IMEI, avec barème de majoration.",
+          "Point de vente : scan d'IMEI, contrôle de disponibilité et verrouillage des prix.",
+          "Facture personnalisée avec les caractéristiques des appareils, reprise et échange de téléphones, rapports de marge par point de vente."
+        ],
+        "shots": {
+          "imei-list": "Téléphones en stock avec IMEI, mémoire, couleur, batterie, cycles, garantie et prix de vente.",
+          "pos-imei-selection": "En caisse, seuls les IMEI réellement en stock sont proposés, avec couleur, batterie, cycles, garantie et état.",
+          "pos-imei-scan": "Le scan d'un IMEI retrouve le modèle et rattache automatiquement le numéro à la ligne de vente.",
+          "imei-transfer": "Transfert entre boutiques par IMEI, avec contrôle des numéros inconnus ou en stock ailleurs.",
+          "rfq-import": "Demande de prix créée à partir du fichier Excel du fournisseur, avec la mémoire de chaque variante.",
+          "invoice-devices": "Facture client générée depuis la caisse, avec l'IMEI, la batterie, les cycles, la garantie et l'état de chaque appareil vendu.",
+          "net-profit": "Ventes, coût des ventes, marge, charges analytiques et bénéfice net de chaque boutique, mois par mois.",
+          "purchases-sales-unsold": "Récapitulatif par boutique et par catégorie : achats, ventes, bénéfice, dépenses réparties, bénéfice net et valeur des invendus."
+        }
+      },
+      "consulting-firm": {
+        "name": "Facturation, RH et paie pour un cabinet de conseil",
+        "sector": "Services · Odoo Enterprise",
+        "context": "Un cabinet de conseil multi-sociétés voulait facturer ses missions, suivre ses collaborateurs et produire la paie malgache directement dans Odoo, avec des documents conformes à ses usages.",
+        "functional": [
+          "Réunions régulières avec le client pour recueillir et prioriser les retours (factures, lots de paie).",
+          "Support utilisateur après la mise en production et traitement des retours sur la facturation.",
+          "Paramétrage de la paie : structures salariales, règles et paramètres datés (CNAPS, OSTIE, FMFP, barème IRSA)."
+        ],
+        "technical": [
+          "Facture en ariary avec annexe des tâches, débours hors TVA, montant en lettres, version française et anglaise, envoi groupé par e-mail.",
+          "Grand livre enrichi : référence de commande, numéro de pièce, libellé.",
+          "RH : matricules, groupes professionnels, préavis calculés et alertes aux managers.",
+          "Bulletin de paie malgache, tableau de bord des lots de paie et calcul du solde de tout compte."
+        ],
+        "shots": {
+          "invoice": "Facture d'honoraires en ariary : récapitulatif par section, TVA, débours hors taxe, montant en lettres et annexe des tâches.",
+          "payslip": "Bulletin de paie en ariary avec CNAPS, OSTIE, revenu imposable et IRSA au barème progressif.",
+          "payroll-batches": "Lots de paie avec la synthèse des salaires, primes, CNAPS, OSTIE, IRSA, net à payer et charges patronales.",
+          "final-settlement": "Solde de tout compte : jours travaillés, congés à indemniser, préavis non effectué et salaire moyen de référence.",
+          "employee-notice": "Fiche employé avec matricule, groupe professionnel et date de fin de préavis calculée, signalée par un bandeau.",
+          "general-ledger": "Grand livre enrichi des colonnes N° de pièce, Libellé, Réf. pièce et Référence client."
+        }
+      },
+      "freight-forwarder": {
+        "name": "Application métier pour un transitaire maritime",
+        "sector": "Logistique · import Chine – Madagascar",
+        "context": "Un transitaire gérait ses dossiers de groupage dans un classeur Excel à macros. L'objectif : reprendre ses calculs dans Odoo et relier chaque dossier à la facturation, aux paiements et aux dépenses.",
+        "functional": [
+          "Reprise d'un projet en cours et analyse du classeur Excel existant.",
+          "Cadrage du suivi des dépenses par dossier avec l'application Notes de frais.",
+          "Recette interne puis recette avec le client."
+        ],
+        "technical": [
+          "Dossiers de groupage LCL et FCL, reprenant les formules du classeur métier, avec import Excel.",
+          "Facturation des reçus et des débours sur des journaux dédiés, reçu de paiement généré à partir des lettrages.",
+          "Sortie des colis au prorata du paiement, rétention des colis, relevé client.",
+          "Analyse de la marge par dossier et rattachement des dépenses aux dossiers."
+        ],
+        "shots": {
+          "shipping-file": "Dossier maritime en groupage : colis, volume, poids taxable, fret et frais calculés en ariary par client.",
+          "package-release": "Sortie de colis indiquant la part réglée de la facture et le nombre de colis couverts par le paiement.",
+          "margin": "Rentabilité d'un conteneur : comparaison poste par poste des débours refacturés et des factures fournisseurs.",
+          "payment-receipt": "Reçu de paiement en deux volets : montant de la facture, déjà réglé, versement du jour, reste dû et montant en lettres.",
+          "customer-statement": "Relevé client : colis restant en entrepôt, montants dus et payés, encaissements de la période."
+        }
+      }
+    },
     "items": {
       "financial-analysis": {
         "name": "Analyse financière full-stack",
@@ -82,25 +274,63 @@
   },
   "skills": {
     "title": "Mes compétences",
-    "subtitle": "Les technologies et outils que j'utilise au quotidien pour concevoir et livrer des applications.",
-    "main_title": "Technologies principales",
-    "backend": "Backend",
-    "frontend": "Frontend",
-    "database": "Bases de données",
-    "devops": "DevOps & outillage",
-    "tools": "Outils",
+    "subtitle": "Ce que je mets en œuvre sur les projets Odoo, côté fonctionnel comme côté technique.",
+    "odoo_apps": "Applications Odoo",
+    "configuration": "Paramétrage et données",
+    "consulting": "Conseil et support",
+    "odoo_tech": "Technique Odoo",
+    "development": "Développement",
     "soft_skills": "Compétences transverses",
-    "soft": {
-      "problem_solving": "Résolution de problèmes",
-      "teamwork": "Travail en équipe",
-      "communication": "Communication",
-      "autonomy": "Autonomie",
-      "curiosity": "Curiosité technique"
-    }
+    "lists": {
+      "odoo_apps": [
+        "Ventes",
+        "Achats",
+        "Inventaire",
+        "Point de vente",
+        "Facturation",
+        "Comptabilité",
+        "Employés",
+        "Paie",
+        "Notes de frais",
+        "Studio"
+      ],
+      "configuration": [
+        "Imports de données et contrôle de cohérence",
+        "Structures et règles salariales",
+        "Journaux, taxes et rapprochement bancaire",
+        "Modèles de documents et rapports",
+        "Droits d'accès",
+        "Installation on-premise"
+      ],
+      "consulting": [
+        "Cadrage fonctionnel",
+        "Recette",
+        "Support utilisateur",
+        "Formation des utilisateurs",
+        "Rédaction de procédures",
+        "Priorisation des retours"
+      ],
+      "soft_skills": [
+        "Rigueur",
+        "Autonomie",
+        "Curiosité",
+        "Pédagogie",
+        "Travail en équipe"
+      ]
+    },
+    "processes_title": "Processus métiers couverts sur mes projets",
+    "processes": [
+      "Achats et approvisionnement",
+      "Stock multi-sites",
+      "Vente et point de vente",
+      "Facturation et encaissements",
+      "Comptabilité",
+      "RH et paie"
+    ]
   },
   "contact": {
     "title": "Me contacter",
-    "subtitle": "Un projet, une opportunité ou simplement une question ? Écrivez-moi, je réponds rapidement.",
+    "subtitle": "Un projet Odoo, une opportunité ou simplement une question ? Écrivez-moi, je réponds rapidement.",
     "stay_connected": "Restons en contact",
     "email": "E-mail",
     "github": "GitHub",

@@ -9,10 +9,10 @@ export const LANGUAGES = [
 ]
 
 const SUPPORTED = LANGUAGES.map((language) => language.code)
-const DEFAULT_LOCALE = 'en'
+const DEFAULT_LOCALE = 'fr'
 export const LOCALE_STORAGE_KEY = 'language'
 
-// Priorité : choix explicite de l'utilisateur > langue du navigateur > anglais.
+// Priorité : choix explicite de l'utilisateur > langue du navigateur > français.
 function resolveInitialLocale() {
   const stored = localStorage.getItem(LOCALE_STORAGE_KEY)
   if (stored && SUPPORTED.includes(stored)) return stored
