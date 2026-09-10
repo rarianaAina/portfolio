@@ -46,6 +46,11 @@
               <span class="font-medium">{{ t(`about.${key}`) }}</span>
             </li>
           </ul>
+
+          <p class="mt-6 flex items-center gap-2 text-gray-700 dark:text-gray-300">
+            <LanguageIcon class="h-5 w-5 shrink-0 text-primary-600 dark:text-primary-400" aria-hidden="true" />
+            <span><span class="font-medium">{{ t('about.languages_label') }}</span> {{ t('about.languages') }}</span>
+          </p>
         </div>
       </div>
     </div>
@@ -53,11 +58,11 @@
 </template>
 
 <script setup>
-import { CheckCircleIcon } from '@heroicons/vue/24/outline'
+import { CheckCircleIcon, LanguageIcon } from '@heroicons/vue/24/outline'
 import { useI18n } from 'vue-i18n'
 import portrait from '../assets/portrait.webp'
 
 const { t } = useI18n()
 
-const highlights = ['highlight_fullstack', 'highlight_architecture', 'highlight_api']
+const highlights = ['highlight_functional', 'highlight_support', 'highlight_dev']
 </script>

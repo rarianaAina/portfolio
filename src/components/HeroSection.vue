@@ -29,9 +29,19 @@
           {{ t('hero.role') }}
         </p>
 
-        <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+        <p class="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-3xl mx-auto">
           {{ t('hero.subtitle') }}
         </p>
+
+        <ul class="flex flex-wrap justify-center gap-2 mb-8">
+          <li
+            v-for="tag in tm('hero.tags')"
+            :key="rt(tag)"
+            class="text-sm font-medium bg-primary-100 text-primary-800 dark:bg-primary-900/60 dark:text-primary-200 px-3 py-1 rounded-full"
+          >
+            {{ rt(tag) }}
+          </li>
+        </ul>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a href="#projects" class="btn-primary">{{ t('hero.cta_projects') }}</a>
@@ -60,5 +70,5 @@ import { ChevronDownIcon } from '@heroicons/vue/24/outline'
 import { useI18n } from 'vue-i18n'
 import portrait from '../assets/portrait.webp'
 
-const { t } = useI18n()
+const { t, tm, rt } = useI18n()
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="py-16 lg:py-24 section-padding">
+  <section id="contact" class="py-16 lg:py-24 section-padding bg-white dark:bg-gray-800">
     <div class="container-max">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">

@@ -6,9 +6,10 @@ Personal portfolio built with **Vue 3**, **Vite** and **Tailwind CSS**, availabl
 
 ## Features
 
-- Single-page site with `Hero`, `About`, `Projects`, `Skills` and `Contact` sections
-- Full **English / French** internationalisation (`vue-i18n`), including project descriptions
-- Language auto-detected from the browser, then remembered in `localStorage`
+- Single-page site with `Hero`, `About`, `Experience`, `Projects`, `Skills` and `Contact` sections, positioned on Odoo functional & technical consulting
+- Odoo projects presented anonymously, with a screenshot gallery (native `<dialog>` lightbox, keyboard navigation)
+- Full **French / English** internationalisation (`vue-i18n`), including project descriptions and screenshot captions
+- Language auto-detected from the browser (French by default), then remembered in `localStorage`
 - **Dark mode** following the system preference, with a manual override and no flash on load
 - Accessibility: skip link, visible focus rings, labelled controls, `prefers-reduced-motion` support
 - SEO: localised `<title>` / `<meta description>`, Open Graph and Twitter cards
@@ -41,6 +42,7 @@ npm run dev   # start the dev server on http://localhost:5173
 ```
 src/
 ├─ assets/          # images shipped through the bundler (optimised WebP)
+│  └─ projects/     # Odoo project screenshots: <project-id>/<slug>.webp + <slug>-thumb.webp
 ├─ components/      # one component per section, plus icons/
 ├─ composables/     # useTheme (dark mode), useDocumentMeta (title, lang, OG)
 ├─ data/            # projects.js and site.js — content and links, no markup
@@ -53,7 +55,10 @@ public/             # served as-is: résumé PDF, favicon, Open Graph image
 ## Editing the content
 
 - **Wording** (any language): `src/locales/en.json` and `src/locales/fr.json`. Both files must keep the exact same keys.
-- **Projects**: add an entry to `src/data/projects.js` (id, icon, stack, GitHub URL), then add a matching `projects.items.<id>` block with `name` and `description` in *both* locale files.
+- **Odoo projects**: add an entry to `odooProjects` in `src/data/projects.js` (id, Odoo apps, stack, repositories, screenshot slugs), then a matching `projects.odoo.<id>` block (`name`, `sector`, `context`, `functional`, `technical`, `shots`) in *both* locale files.
+- **Screenshots**: put `<slug>.webp` (max 1440 px wide) and `<slug>-thumb.webp` (560 px) in `src/assets/projects/<id>/`, list the slug in `projects.js` and give it a caption under `projects.odoo.<id>.shots.<slug>`. Slugs must not start with a digit. Screenshots must come from demo databases: **no company name, no person name, no contact details, no avatar**.
+- **Other projects**: add an entry to `otherProjects` (id, stack, GitHub URL) and a `projects.items.<id>` block with `name` and `description`.
+- **Experience and education**: `experience.items` and `experience.education` in the locale files.
 - **Contact details and links**: `src/data/site.js`.
 - **Résumé**: replace `public/cv-rariana-andriamiadana.pdf`, keeping the same file name (or update `cvPath` and `cvFileName` in `src/data/site.js`).
 

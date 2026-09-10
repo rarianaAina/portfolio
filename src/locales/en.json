@@ -1,12 +1,13 @@
 {
   "meta": {
-    "title": "Rariana Aina Andriamiadana — Full-stack developer",
-    "description": "Portfolio of Rariana Aina Andriamiadana, a full-stack developer specialising in Java, Spring Boot and modern web development."
+    "title": "Rariana Aina Andriamiadana — Odoo functional & technical consultant",
+    "description": "Odoo functional and technical consultant: configuration, user support, acceptance testing, training and Odoo 19 module development for small and mid-sized businesses."
   },
   "nav": {
     "primary": "Main navigation",
     "home": "Home",
     "about": "About",
+    "experience": "Experience",
     "projects": "Projects",
     "skills": "Skills",
     "contact": "Contact",
@@ -22,29 +23,220 @@
   "hero": {
     "greeting": "Hi, I'm",
     "name": "Rariana Aina Andriamiadana",
-    "role": "Full-stack developer",
-    "subtitle": "I build robust, maintainable web applications — mainly with Java and Spring Boot on the server side, Vue.js and React on the front end.",
-    "cta_projects": "View my projects",
+    "role": "Odoo functional & technical consultant",
+    "subtitle": "I help small and mid-sized businesses configure, support and evolve their Odoo ERP: requirements gathering, application setup, data imports, acceptance testing and user training — plus custom modules when the standard isn't enough.",
+    "tags": [
+      "Odoo 19 Community & Enterprise",
+      "Sales · Purchase · Inventory · Point of Sale",
+      "Accounting · HR · Payroll"
+    ],
+    "cta_projects": "View my Odoo projects",
     "cta_contact": "Get in touch",
     "scroll": "Scroll to the next section"
   },
   "about": {
     "title": "About me",
-    "subtitle": "Driven by building things that work",
+    "subtitle": "From business need to a working ERP",
     "portrait_alt": "Portrait of Rariana Aina Andriamiadana",
-    "description_1": "As a full-stack developer I work across the whole chain, from the data model to the user interface. What I enjoy most is turning a fuzzy business need into a clear, reliable application.",
-    "description_2": "My main ground is the Java ecosystem with Spring Boot, paired with modern front ends in Vue.js and React. I care about readable, tested and documented code, and about well-designed databases.",
-    "description_3": "Away from the editor I follow how the ecosystem evolves, contribute to open source projects, and enjoy sharing what I learn with the community.",
-    "highlight_fullstack": "Full-stack development",
-    "highlight_architecture": "Software architecture",
-    "highlight_api": "REST API design"
+    "description_1": "From June to August 2026 I worked on Odoo at KASIA Consulting, a consulting and integration firm. I worked with small and mid-sized businesses from very different sectors — phone retail, consulting, sea freight, manufacturing — from the scoping workshop through to support after go-live.",
+    "description_2": "Before Odoo, I spent almost two years in technical customer support, then two years managing user accounts, access rights and onboarding training for new staff. That left me with habits I use every day: listen to the user, reproduce the problem, explain the fix simply.",
+    "description_3": "My background as a developer (Java, .NET, Vue.js, React, SQL) lets me go beyond configuration when needed: Python modules, XML views, QWeb reports, data imports and checks in PostgreSQL.",
+    "highlight_functional": "Odoo functional configuration",
+    "highlight_support": "User support and training",
+    "highlight_dev": "Odoo development (Python, XML, QWeb)",
+    "languages_label": "Languages:",
+    "languages": "Malagasy, French, English"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "From user support to Odoo consulting, by way of business application development.",
+    "education_title": "Education",
+    "cv_note": "My résumé has the full details of my background.",
+    "cv_link": "Download the résumé",
+    "items": [
+      {
+        "role": "Odoo Developer / Odoo Business Analyst",
+        "org": "KASIA Consulting",
+        "period": "June 2026 – Aug. 2026",
+        "bullets": [
+          "Functional scoping and requirements analysis with clients: workshops, meeting minutes, clarification questions.",
+          "Odoo 19 configuration (Community and Enterprise): sales, purchase, multi-warehouse inventory, point of sale, invoicing, accounting, employees, payroll, expenses.",
+          "Data imports (products, stock, purchase orders) and consistency checks before validation.",
+          "Internal acceptance testing, then acceptance testing with the client before every go-live.",
+          "User support and handling of client feedback after go-live, following issues through to resolution.",
+          "User training (purchase, sales) and step-by-step procedure writing.",
+          "Custom module development when the standard isn't enough: Python, XML, QWeb, OWL."
+        ]
+      },
+      {
+        "role": "Full-stack developer (internship, then hired)",
+        "org": "OPTIMADA",
+        "period": "Sept. 2025 – May 2026",
+        "bullets": [
+          "Corrective and evolutive maintenance of an HR application: employees, leave, time tracking, schedules, recruitment, approval workflows.",
+          "Customer portal in Java Spring Boot and React, synchronised with Sage 100cloud CRM (customers, contacts, products, support tickets).",
+          "REST APIs, SQL Server data synchronisation, e-mail and WhatsApp notifications, dashboards.",
+          "Involved in requirements analysis, testing and deployments."
+        ]
+      },
+      {
+        "role": "Logs Administrator (GIR)",
+        "org": "Webhelp Madagascar",
+        "period": "Aug. 2022 – Aug. 2024",
+        "bullets": [
+          "Management and review of user accounts, access rights and information-system permissions.",
+          "Training new staff on security and compliance rules.",
+          "Supporting client audits and following up on corrective actions."
+        ]
+      },
+      {
+        "role": "Customer Advisor",
+        "org": "Webhelp Madagascar",
+        "period": "Dec. 2020 – Aug. 2022",
+        "bullets": [
+          "Helping customers with technical and IT issues."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor's degree in Computer Science",
+        "school": "IT University, Andoharanofotsy",
+        "period": "2018 – 2026"
+      }
+    ]
   },
   "projects": {
-    "title": "My projects",
-    "subtitle": "A selection of personal and academic projects that show how I design and structure an application.",
+    "title": "Odoo projects",
+    "subtitle": "Projects delivered for small and mid-sized businesses, presented anonymously. Screenshots come from demo databases with fictitious data.",
+    "context": "The need",
+    "functional": "Configuration and support",
+    "technical": "Development",
+    "apps": "Odoo apps",
+    "stack": "Technologies",
+    "open_gallery": "View screenshots ({count})",
+    "open_shot": "Enlarge screenshot: {caption}",
+    "gallery_label": "Screenshots of {name}",
+    "previous": "Previous screenshot",
+    "next": "Next screenshot",
+    "close": "Close",
+    "counter": "{current} / {total}",
     "github": "View code",
     "github_aria": "View the source code of {name} on GitHub",
     "view_all": "All my repositories on GitHub",
+    "other_title": "Other projects",
+    "other_subtitle": "Earlier personal and academic projects, in Java, JavaScript and Python.",
+    "odoo_apps": {
+      "sales": "Sales",
+      "purchase": "Purchase",
+      "inventory": "Inventory",
+      "pos": "Point of Sale",
+      "invoicing": "Invoicing",
+      "accounting": "Accounting",
+      "employees": "Employees",
+      "payroll": "Payroll",
+      "expenses": "Expenses"
+    },
+    "odoo": {
+      "mobile-money": {
+        "name": "Mobile Money payments at the till",
+        "sector": "Public modules · Point of Sale",
+        "repo_reference": "Entry module",
+        "repo_reconciliation": "Reconciliation module",
+        "context": "In Madagascar, a large share of in-store sales are paid with MVola, Orange Money or Airtel Money. Without a transaction reference captured at the till, payments can't be reconciled with the operator's statement.",
+        "functional": [
+          "Transaction reference required for every Mobile Money payment, payer phone mandatory or optional depending on the setting, both printed on the receipt.",
+          "Detection of references already used, with three behaviours to choose from: allow, warn or block.",
+          "Import of the operator statement and automatic matching: confirmed payments, amount differences, missing from the statement, not recorded at the till.",
+          "Control report for the manager to sign."
+        ],
+        "technical": [
+          "Two Odoo 19 modules: till entry (OWL, also works offline) and reconciliation (models, import wizard, QWeb report).",
+          "Reads CSV, XLSX and XLS statements, with import profiles tailored to each operator.",
+          "Automated Python tests and a UI test, French translation."
+        ],
+        "shots": {
+          "reference-entry": "The till asks for the Mobile Money transaction number at payment time; the payer number is optional.",
+          "reused-reference": "A reference already used on another sale triggers a warning before validation.",
+          "statement-missing": "The operator statement is matched with till payments: missing, not in POS, differences and confirmed.",
+          "amount-differences": "Tab listing differences between the amount received by the operator and the amount recorded at the till.",
+          "control-report": "Printable control report: summary by result, then detail of missing, unrecorded and mismatched payments."
+        }
+      },
+      "phone-retail": {
+        "name": "Inventory and POS for a phone retailer",
+        "sector": "Retail · several shops",
+        "context": "A retailer of imported phones, with several shops, needs to track every single device — IMEI, storage, colour, battery health, warranty — from purchase to sale, including transfers between shops.",
+        "functional": [
+          "Scoping with the client: purchases in foreign currency, FIFO valuation, warehouses, resellers, payment methods (card terminal, cash, Mobile Money).",
+          "Configuration of purchase, multi-shop inventory, point of sale and invoicing.",
+          "Acceptance testing with the client and user training."
+        ],
+        "technical": [
+          "Tracking by IMEI with each device's specifications, Excel import of incoming shipments and purchase orders.",
+          "Transfers between shops by IMEI scan, with a mark-up scale.",
+          "Point of sale: IMEI scan, availability check and price locking.",
+          "Custom invoice listing device specifications, phone trade-in and exchange, margin reports per point of sale."
+        ],
+        "shots": {
+          "imei-list": "Phones in stock with IMEI, storage, colour, battery, cycles, warranty and sale price.",
+          "pos-imei-selection": "At the till, only IMEIs actually in stock are offered, with colour, battery, cycles, warranty and condition.",
+          "pos-imei-scan": "Scanning an IMEI finds the model and attaches the number to the order line automatically.",
+          "imei-transfer": "Transfer between shops by IMEI, flagging unknown numbers or devices stocked elsewhere.",
+          "rfq-import": "Request for quotation created from the supplier's Excel file, with the storage of each variant.",
+          "invoice-devices": "Customer invoice generated from the till, listing the IMEI, battery, cycles, warranty and condition of each device sold.",
+          "net-profit": "Sales, cost of sales, margin, analytic expenses and net profit of each shop, month by month.",
+          "purchases-sales-unsold": "Summary per shop and category: purchases, sales, profit, allocated expenses, net profit and unsold stock value."
+        }
+      },
+      "consulting-firm": {
+        "name": "Invoicing, HR and payroll for a consulting firm",
+        "sector": "Services · Odoo Enterprise",
+        "context": "A multi-company consulting firm wanted to invoice its engagements, manage its staff and run Malagasy payroll directly in Odoo, with documents matching its own practices.",
+        "functional": [
+          "Regular meetings with the client to collect and prioritise feedback (invoices, payroll batches).",
+          "User support after go-live and handling of invoicing feedback.",
+          "Payroll configuration: salary structures, rules and dated parameters (CNAPS, OSTIE, FMFP, IRSA tax scale)."
+        ],
+        "technical": [
+          "Invoice in ariary with a task appendix, VAT-exempt disbursements, amount in words, French and English versions, bulk sending by e-mail.",
+          "Extended general ledger: purchase order reference, document number, label.",
+          "HR: employee IDs, professional groups, computed notice periods and alerts to managers.",
+          "Malagasy payslip, payroll batch dashboard and final settlement computation."
+        ],
+        "shots": {
+          "invoice": "Fee invoice in ariary: summary by section, VAT, untaxed disbursements, amount in words and task appendix.",
+          "payslip": "Payslip in ariary with CNAPS, OSTIE, taxable income and progressive IRSA.",
+          "payroll-batches": "Payroll batches with a summary of salaries, bonuses, CNAPS, OSTIE, IRSA, net pay and employer contributions.",
+          "final-settlement": "Final settlement: days worked, leave to compensate, unworked notice and reference average salary.",
+          "employee-notice": "Employee form with staff number, professional group and computed notice end date, flagged by a ribbon.",
+          "general-ledger": "General ledger extended with document number, label, entry reference and customer reference columns."
+        }
+      },
+      "freight-forwarder": {
+        "name": "Business application for a sea freight forwarder",
+        "sector": "Logistics · China – Madagascar imports",
+        "context": "A freight forwarder managed its consolidation files in a macro-enabled Excel workbook. The goal: move its calculations into Odoo and link every file to invoicing, payments and expenses.",
+        "functional": [
+          "Took over an ongoing project and analysed the existing Excel workbook.",
+          "Scoped per-file expense tracking with the Expenses app.",
+          "Internal acceptance testing, then acceptance testing with the client."
+        ],
+        "technical": [
+          "LCL and FCL consolidation files reproducing the workbook's formulas, with Excel import.",
+          "Receipt and disbursement invoicing on dedicated journals, payment receipt generated from reconciliations.",
+          "Package release in proportion to payment, package retention, customer statement.",
+          "Margin analysis per file and expenses linked to files."
+        ],
+        "shots": {
+          "shipping-file": "Consolidated sea shipping file: packages, volume, taxable weight, freight and fees computed in ariary per customer.",
+          "package-release": "Package release showing the paid share of the invoice and the number of packages covered by the payment.",
+          "margin": "Container profitability: line-by-line comparison of re-invoiced disbursements and supplier bills.",
+          "payment-receipt": "Two-part payment receipt: invoice amount, already paid, today's payment, balance due and amount in words.",
+          "customer-statement": "Customer statement: packages left in the warehouse, amounts due and paid, collections over the period."
+        }
+      }
+    },
     "items": {
       "financial-analysis": {
         "name": "Full-stack financial analysis",
@@ -82,25 +274,63 @@
   },
   "skills": {
     "title": "My skills",
-    "subtitle": "The technologies and tools I use day to day to design and ship applications.",
-    "main_title": "Core technologies",
-    "backend": "Backend",
-    "frontend": "Frontend",
-    "database": "Databases",
-    "devops": "DevOps & tooling",
-    "tools": "Tools",
+    "subtitle": "What I put into practice on Odoo projects, on both the functional and the technical side.",
+    "odoo_apps": "Odoo apps",
+    "configuration": "Configuration and data",
+    "consulting": "Consulting and support",
+    "odoo_tech": "Odoo technical",
+    "development": "Development",
     "soft_skills": "Transferable skills",
-    "soft": {
-      "problem_solving": "Problem solving",
-      "teamwork": "Teamwork",
-      "communication": "Communication",
-      "autonomy": "Autonomy",
-      "curiosity": "Technical curiosity"
-    }
+    "lists": {
+      "odoo_apps": [
+        "Sales",
+        "Purchase",
+        "Inventory",
+        "Point of Sale",
+        "Invoicing",
+        "Accounting",
+        "Employees",
+        "Payroll",
+        "Expenses",
+        "Studio"
+      ],
+      "configuration": [
+        "Data imports and consistency checks",
+        "Salary structures and rules",
+        "Journals, taxes and bank reconciliation",
+        "Document templates and reports",
+        "Access rights",
+        "On-premise installation"
+      ],
+      "consulting": [
+        "Functional scoping",
+        "Acceptance testing",
+        "User support",
+        "User training",
+        "Procedure writing",
+        "Feedback prioritisation"
+      ],
+      "soft_skills": [
+        "Rigour",
+        "Autonomy",
+        "Curiosity",
+        "Teaching skills",
+        "Teamwork"
+      ]
+    },
+    "processes_title": "Business processes covered in my projects",
+    "processes": [
+      "Purchasing and procurement",
+      "Multi-site inventory",
+      "Sales and point of sale",
+      "Invoicing and collections",
+      "Accounting",
+      "HR and payroll"
+    ]
   },
   "contact": {
     "title": "Get in touch",
-    "subtitle": "A project, an opportunity, or simply a question? Send me a message — I reply quickly.",
+    "subtitle": "An Odoo project, an opportunity, or simply a question? Send me a message — I reply quickly.",
     "stay_connected": "Let's stay in touch",
     "email": "Email",
     "github": "GitHub",
