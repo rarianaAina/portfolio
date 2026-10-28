@@ -167,20 +167,43 @@
                 {{ tech }}
               </li>
             </ul>
-            <a
-              :href="project.githubUrl"
-              target="_blank"
-              rel="noopener noreferrer"
-              :aria-label="t('projects.github_aria', { name: t(`projects.items.${project.id}.name`) })"
-              class="mt-auto inline-flex items-center gap-2 text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline rounded focus-ring"
-            >
-              <GithubIcon class="h-4 w-4" />
-              {{ t('projects.github') }}
-            </a>
+            <div class="mt-auto flex flex-wrap gap-x-4 gap-y-2">
+              <a
+                v-if="project.siteUrl"
+                :href="project.siteUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                :aria-label="t('projects.site_aria', { name: t(`projects.items.${project.id}.name`) })"
+                class="inline-flex items-center gap-2 text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline rounded focus-ring"
+              >
+                <ArrowTopRightOnSquareIcon class="h-4 w-4" aria-hidden="true" />
+                {{ t('projects.site') }}
+              </a>
+              <a
+                v-if="project.githubUrl"
+                :href="project.githubUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                :aria-label="t('projects.github_aria', { name: t(`projects.items.${project.id}.name`) })"
+                class="inline-flex items-center gap-2 text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline rounded focus-ring"
+              >
+                <GithubIcon class="h-4 w-4" />
+                {{ t('projects.github') }}
+              </a>
+            </div>
           </li>
         </ul>
 
-        <div class="mt-10 text-center">
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+          <a
+            :href="site.fullstackUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary inline-flex items-center gap-2"
+          >
+            <ArrowTopRightOnSquareIcon class="h-5 w-5" aria-hidden="true" />
+            {{ t('projects.fullstack_portfolio') }}
+          </a>
           <a
             :href="site.githubUrl"
             target="_blank"
@@ -201,7 +224,7 @@
 <script setup>
 import { computed, nextTick, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { PhotoIcon } from '@heroicons/vue/24/outline'
+import { ArrowTopRightOnSquareIcon, PhotoIcon } from '@heroicons/vue/24/outline'
 import GithubIcon from './icons/GithubIcon.vue'
 import ScreenshotViewer from './ScreenshotViewer.vue'
 import { odooProjects, otherProjects } from '../data/projects'

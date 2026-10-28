@@ -54,8 +54,8 @@
           <div class="card p-6">
             <p class="text-gray-600 dark:text-gray-300 mb-4">{{ t('experience.cv_note') }}</p>
             <a
-              :href="site.cvPath"
-              :download="site.cvFileName"
+              :href="t('nav.cv_path')"
+              :download="t('nav.cv_file_name')"
               class="btn-primary inline-flex items-center gap-2 text-sm py-2"
             >
               <DocumentArrowDownIcon class="h-4 w-4" aria-hidden="true" />
@@ -71,7 +71,6 @@
 <script setup>
 import { AcademicCapIcon, DocumentArrowDownIcon } from '@heroicons/vue/24/outline'
 import { useI18n } from 'vue-i18n'
-import { site } from '../data/site'
 
 const { t, tm, rt } = useI18n()
 </script>

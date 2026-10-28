@@ -18,7 +18,9 @@
     "theme_dark": "Switch to dark theme",
     "theme_light": "Switch to light theme",
     "language": "Language selection",
-    "skip_to_content": "Skip to main content"
+    "skip_to_content": "Skip to main content",
+    "cv_path": "/cv/Rariana-Andriamiadana-CV-Odoo-Consultant-EN.pdf",
+    "cv_file_name": "Rariana-Andriamiadana-CV-Odoo-Consultant-EN.pdf"
   },
   "hero": {
     "greeting": "Hi, I'm",
@@ -38,7 +40,7 @@
     "title": "About me",
     "subtitle": "From business need to a working ERP",
     "portrait_alt": "Portrait of Rariana Aina Andriamiadana",
-    "description_1": "From June to August 2026 I worked on Odoo at KASIA Consulting, a consulting and integration firm. I worked with small and mid-sized businesses from very different sectors — phone retail, consulting, sea freight, manufacturing — from the scoping workshop through to support after go-live.",
+    "description_1": "From June to September 2026 I worked on Odoo at KASIA Consulting, a consulting and integration firm. I worked with small and mid-sized businesses from very different sectors — phone retail, consulting, sea freight, manufacturing — from the scoping workshop through to support after go-live.",
     "description_2": "Before Odoo, I spent almost two years in technical customer support, then two years managing user accounts, access rights and onboarding training for new staff. That left me with habits I use every day: listen to the user, reproduce the problem, explain the fix simply.",
     "description_3": "My background as a developer (Java, .NET, Vue.js, React, SQL) lets me go beyond configuration when needed: Python modules, XML views, QWeb reports, data imports and checks in PostgreSQL.",
     "highlight_functional": "Odoo functional configuration",
@@ -55,9 +57,19 @@
     "cv_link": "Download the résumé",
     "items": [
       {
+        "role": "Freelance full stack developer",
+        "org": "Sole proprietorship · remote, clients in France",
+        "period": "Oct. 2026 – present",
+        "bullets": [
+          "Harrys Studio (nail salon): complete website with online booking (React, Vite, Supabase).",
+          "Agentova.ai (AI agents SaaS company): complete rebuild of the marketing website (Webflow).",
+          "Fully remote engagements: requirements, development, go-live and ongoing updates."
+        ]
+      },
+      {
         "role": "Odoo Developer / Odoo Business Analyst",
         "org": "KASIA Consulting",
-        "period": "June 2026 – Aug. 2026",
+        "period": "June 2026 – Sept. 2026",
         "bullets": [
           "Functional scoping and requirements analysis with clients: workshops, meeting minutes, clarification questions.",
           "Odoo 19 configuration (Community and Enterprise): sales, purchase, multi-warehouse inventory, point of sale, invoicing, accounting, employees, payroll, expenses.",
@@ -124,8 +136,8 @@
     "github": "View code",
     "github_aria": "View the source code of {name} on GitHub",
     "view_all": "All my repositories on GitHub",
-    "other_title": "Other projects",
-    "other_subtitle": "Earlier personal and academic projects, in Java, JavaScript and Python.",
+    "other_title": "Other work",
+    "other_subtitle": "Websites delivered as a freelancer and applications I designed and put online.",
     "odoo_apps": {
       "sales": "Sales",
       "purchase": "Purchase",
@@ -140,7 +152,7 @@
     "odoo": {
       "mobile-money": {
         "name": "Mobile Money payments at the till",
-        "sector": "Public modules · Point of Sale",
+        "sector": "Point of Sale · Mobile Money",
         "repo_reference": "Entry module",
         "repo_reconciliation": "Reconciliation module",
         "context": "In Madagascar, a large share of in-store sales are paid with MVola, Orange Money or Airtel Money. Without a transaction reference captured at the till, payments can't be reconciled with the operator's statement.",
@@ -238,39 +250,26 @@
       }
     },
     "items": {
-      "financial-analysis": {
-        "name": "Full-stack financial analysis",
-        "description": "Financial analysis application with a Spring Boot backend and a web interface. Financial statement management and analytical dashboards."
+      "harrys-studio": {
+        "name": "Harrys Studio",
+        "description": "Complete website for a nail salon in France, with online booking: availability calendar, time slot and technician selection."
       },
-      "airline-management": {
-        "name": "Airline management",
-        "description": "Flight and aircraft management backend built with Spring Boot. Full CRUD and complex relational modelling."
+      "live-erp": {
+        "name": "LiveERP",
+        "description": "ERP for live-stream selling on Facebook and TikTok: purchasing, item-by-item checks, live console, parcels, couriers and reports."
       },
-      "bakery-management": {
-        "name": "Bakery management",
-        "description": "Management system for a bakery: inventory, sales and staff, organised as microservices."
+      "fotoanako": {
+        "name": "Fotoanako",
+        "description": "White-label online booking for salons and spas: storefront, booking, admin and loyalty."
       },
-      "crypto-mobile": {
-        "name": "Crypto tracker (mobile)",
-        "description": "Mobile application for tracking cryptocurrencies, with transaction history and market analysis."
-      },
-      "human-hr": {
-        "name": "HumanHR — HR management",
-        "description": "Human resources platform covering employees, leave requests and payroll management."
-      },
-      "football-analytics": {
-        "name": "Football analytics",
-        "description": "Statistical analysis of football matches, with data visualisation and prediction models."
-      },
-      "auth-module": {
-        "name": "Authentication module",
-        "description": "Secure authentication module with JWT, roles and permissions, ready to plug into any Node.js application."
-      },
-      "real-estate-api": {
-        "name": "Real-estate API",
-        "description": "REST API for a real-estate platform: property management, advanced search and geolocation."
+      "school-management": {
+        "name": "Scolaria",
+        "description": "Multi-school management SaaS: students, timetables, grades, fees and attendance."
       }
-    }
+    },
+    "site": "Visit site",
+    "site_aria": "Open the {name} website",
+    "fullstack_portfolio": "My full stack developer portfolio"
   },
   "skills": {
     "title": "My skills",
@@ -346,10 +345,9 @@
     "form_subject_placeholder": "Subject of your message",
     "form_message": "Message",
     "form_message_placeholder": "Your message",
-    "form_submit": "Send message",
-    "form_sending": "Sending…",
-    "form_success": "Thank you, your message has been sent. I'll get back to you shortly.",
-    "form_error": "Sending failed. You can reach me directly at {email}."
+    "form_submit": "Prepare my email",
+    "form_opened": "Your email app is opening with the message ready to send. If nothing opens, write to me directly at {email}.",
+    "form_hint": "The button opens your email app with the message already filled in: you just need to send it."
   },
   "footer": {
     "copyright": "© {year} Rariana Aina Andriamiadana. All rights reserved.",

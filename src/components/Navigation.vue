@@ -24,8 +24,8 @@
           </a>
 
           <a
-            :href="site.cvPath"
-            :download="site.cvFileName"
+            :href="t('nav.cv_path')"
+            :download="t('nav.cv_file_name')"
             :aria-label="t('nav.cv_aria')"
             class="flex items-center gap-2 px-3 py-2 rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-medium transition-colors duration-200 text-sm focus-ring"
           >
@@ -101,8 +101,8 @@
         </a>
 
         <a
-          :href="site.cvPath"
-          :download="site.cvFileName"
+          :href="t('nav.cv_path')"
+          :download="t('nav.cv_file_name')"
           :aria-label="t('nav.cv_aria')"
           class="flex items-center gap-2 mt-4 px-4 py-2 rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-medium transition-colors duration-200 w-full justify-center focus-ring"
           @click="mobileMenuOpen = false"
@@ -143,7 +143,6 @@ import {
   MoonIcon,
   DocumentArrowDownIcon
 } from '@heroicons/vue/24/outline'
-import { site } from '../data/site'
 import { LANGUAGES, LOCALE_STORAGE_KEY } from '../i18n'
 import { useTheme } from '../composables/useTheme'
 

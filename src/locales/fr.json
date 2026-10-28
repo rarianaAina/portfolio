@@ -18,7 +18,9 @@
     "theme_dark": "Activer le thème sombre",
     "theme_light": "Activer le thème clair",
     "language": "Choix de la langue",
-    "skip_to_content": "Aller au contenu principal"
+    "skip_to_content": "Aller au contenu principal",
+    "cv_path": "/cv/Rariana-Andriamiadana-CV-Consultant-Odoo-FR.pdf",
+    "cv_file_name": "Rariana-Andriamiadana-CV-Consultant-Odoo-FR.pdf"
   },
   "hero": {
     "greeting": "Bonjour, je suis",
@@ -38,7 +40,7 @@
     "title": "À propos de moi",
     "subtitle": "Du besoin métier à l'ERP qui tourne",
     "portrait_alt": "Portrait de Rariana Aina Andriamiadana",
-    "description_1": "De juin à août 2026, j'ai travaillé sur Odoo chez KASIA Consulting, un cabinet de conseil et d'intégration. J'y suis intervenu auprès de PME de secteurs très différents — distribution de téléphonie, conseil, transit maritime, industrie — de l'atelier de cadrage jusqu'au support après la mise en production.",
+    "description_1": "De juin à septembre 2026, j'ai travaillé sur Odoo chez KASIA Consulting, un cabinet de conseil et d'intégration. J'y suis intervenu auprès de PME de secteurs très différents — distribution de téléphonie, conseil, transit maritime, industrie — de l'atelier de cadrage jusqu'au support après la mise en production.",
     "description_2": "Avant Odoo, j'ai passé près de deux ans au support client technique, puis deux ans à gérer les comptes utilisateurs, les habilitations et la formation des nouveaux collaborateurs. J'en garde des réflexes utiles au quotidien : écouter l'utilisateur, reproduire le problème, expliquer la solution simplement.",
     "description_3": "Mon parcours de développeur (Java, .NET, Vue.js, React, SQL) me permet d'aller plus loin que le paramétrage quand c'est nécessaire : modules Python, vues XML, rapports QWeb, imports et contrôles de données en PostgreSQL.",
     "highlight_functional": "Paramétrage fonctionnel Odoo",
@@ -55,9 +57,19 @@
     "cv_link": "Télécharger le CV",
     "items": [
       {
+        "role": "Développeur full stack freelance",
+        "org": "Entreprise individuelle · télétravail, clients en France",
+        "period": "Oct. 2026 – aujourd'hui",
+        "bullets": [
+          "Harrys Studio (salon d'onglerie) : site complet avec réservation en ligne (React, Vite, Supabase).",
+          "Agentova.ai (éditeur SaaS d'agents IA) : refonte complète du site vitrine (Webflow).",
+          "Missions entièrement à distance : recueil des besoins, développement, mise en ligne et évolutions."
+        ]
+      },
+      {
         "role": "Développeur Odoo / Business Analyst Odoo",
         "org": "KASIA Consulting",
-        "period": "Juin 2026 – août 2026",
+        "period": "Juin 2026 – sept. 2026",
         "bullets": [
           "Cadrage fonctionnel et analyse des besoins avec les clients : ateliers, comptes rendus, questions de clarification.",
           "Paramétrage d'Odoo 19 (Community et Enterprise) : ventes, achats, stock multi-entrepôts, point de vente, facturation, comptabilité, employés, paie, notes de frais.",
@@ -124,8 +136,8 @@
     "github": "Voir le code",
     "github_aria": "Voir le code de {name} sur GitHub",
     "view_all": "Tous mes dépôts sur GitHub",
-    "other_title": "Autres projets",
-    "other_subtitle": "Projets personnels et académiques antérieurs, en Java, JavaScript et Python.",
+    "other_title": "Autres réalisations",
+    "other_subtitle": "Sites livrés en freelance et applications que j'ai conçues et mises en ligne.",
     "odoo_apps": {
       "sales": "Ventes",
       "purchase": "Achats",
@@ -140,7 +152,7 @@
     "odoo": {
       "mobile-money": {
         "name": "Paiements Mobile Money en caisse",
-        "sector": "Modules publics · Point de vente",
+        "sector": "Point de vente · Mobile Money",
         "repo_reference": "Module de saisie",
         "repo_reconciliation": "Module de rapprochement",
         "context": "À Madagascar, une grande partie des ventes en boutique se paie par MVola, Orange Money ou Airtel Money. Sans référence de transaction saisie en caisse, impossible de rapprocher les encaissements avec le relevé de l'opérateur.",
@@ -238,39 +250,26 @@
       }
     },
     "items": {
-      "financial-analysis": {
-        "name": "Analyse financière full-stack",
-        "description": "Application d'analyse financière avec un backend Spring Boot et une interface web. Gestion des états financiers et tableaux de bord analytiques."
+      "harrys-studio": {
+        "name": "Harrys Studio",
+        "description": "Site complet pour un salon d'onglerie en France, avec réservation en ligne : calendrier des disponibilités, choix du créneau et de la prestataire."
       },
-      "airline-management": {
-        "name": "Gestion aérienne",
-        "description": "Backend de gestion des vols et des avions avec Spring Boot. CRUD complet et modélisation de relations complexes."
+      "live-erp": {
+        "name": "LiveERP",
+        "description": "ERP pour la vente en live sur Facebook et TikTok : achats, contrôle pièce par pièce, console de live, colis, livreurs et rapports."
       },
-      "bakery-management": {
-        "name": "Gestion de boulangerie",
-        "description": "Système de gestion pour une boulangerie : stocks, ventes et employés, organisé en microservices."
+      "fotoanako": {
+        "name": "Fotoanako",
+        "description": "Prise de rendez-vous en ligne en marque blanche pour salons et spas : vitrine, réservation, administration et fidélité."
       },
-      "crypto-mobile": {
-        "name": "Suivi crypto mobile",
-        "description": "Application mobile de suivi des cryptomonnaies, avec historique des transactions et analyse de marché."
-      },
-      "human-hr": {
-        "name": "HumanHR — Gestion RH",
-        "description": "Plateforme de gestion des ressources humaines : employés, demandes de congés et gestion de la paie."
-      },
-      "football-analytics": {
-        "name": "Analyse football",
-        "description": "Analyse statistique de matchs de football, avec visualisation des données et modèles de prédiction."
-      },
-      "auth-module": {
-        "name": "Module d'authentification",
-        "description": "Module d'authentification sécurisé avec JWT, rôles et permissions, prêt à intégrer dans une application Node.js."
-      },
-      "real-estate-api": {
-        "name": "API immobilière",
-        "description": "API REST pour une plateforme immobilière : gestion des biens, recherche avancée et géolocalisation."
+      "school-management": {
+        "name": "Scolaria",
+        "description": "SaaS de gestion scolaire multi-établissement : élèves, emplois du temps, notes, frais et présences."
       }
-    }
+    },
+    "site": "Voir le site",
+    "site_aria": "Ouvrir le site de {name}",
+    "fullstack_portfolio": "Mon portfolio de développeur full stack"
   },
   "skills": {
     "title": "Mes compétences",
@@ -346,10 +345,9 @@
     "form_subject_placeholder": "Sujet de votre message",
     "form_message": "Message",
     "form_message_placeholder": "Votre message",
-    "form_submit": "Envoyer le message",
-    "form_sending": "Envoi en cours…",
-    "form_success": "Merci, votre message a bien été envoyé. Je vous réponds au plus vite.",
-    "form_error": "L'envoi a échoué. Vous pouvez me joindre directement à {email}."
+    "form_submit": "Préparer mon e-mail",
+    "form_opened": "Votre messagerie s'ouvre avec le message prêt à envoyer. Si rien ne s'ouvre, écrivez-moi directement à {email}.",
+    "form_hint": "Le bouton ouvre votre messagerie avec le message déjà rempli : il ne reste qu'à l'envoyer."
   },
   "footer": {
     "copyright": "© {year} Rariana Aina Andriamiadana. Tous droits réservés.",

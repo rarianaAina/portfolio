@@ -19,16 +19,9 @@ export const odooProjects = [
     id: 'mobile-money',
     apps: ['pos', 'accounting'],
     technologies: ['Python', 'OWL', 'XML', 'QWeb'],
-    repositories: [
-      {
-        key: 'repo_reference',
-        url: 'https://github.com/rarianaAina/pos-mobile-money-reference-odoo'
-      },
-      {
-        key: 'repo_reconciliation',
-        url: 'https://github.com/rarianaAina/pos-mobile-money-reconciliation-odoo'
-      }
-    ],
+    // Dépôts pos-mobile-money-reference-odoo et pos-mobile-money-reconciliation-odoo :
+    // privés pour l'instant (404). Les remettre ici (clés repo_reference / repo_reconciliation) une fois publics.
+    repositories: [],
     shots: shots('mobile-money', [
       'reference-entry',
       'reused-reference',
@@ -82,46 +75,29 @@ export const odooProjects = [
   }
 ]
 
-// Projets antérieurs (personnels et académiques), affichés en format compact.
+// Autres réalisations (freelance, applications personnelles), affichées en format compact.
+// `siteUrl` : site ou démo en ligne, facultatif.
 export const otherProjects = [
   {
-    id: 'financial-analysis',
-    technologies: ['Java', 'Spring Boot', 'Vue.js', 'PostgreSQL'],
-    githubUrl: 'https://github.com/rarianaAina/analyse-financiere-frontend'
+    id: 'harrys-studio',
+    technologies: ['React', 'Vite', 'Supabase'],
+    siteUrl: 'https://harrys-studio.com'
   },
   {
-    id: 'airline-management',
-    technologies: ['Java', 'Spring Boot', 'JPA', 'PostgreSQL'],
-    githubUrl: 'https://github.com/rarianaAina/avion_springboot'
+    id: 'live-erp',
+    technologies: ['React', 'TypeScript', 'Supabase', 'Tauri'],
+    siteUrl: 'https://live-erp.vercel.app',
+    githubUrl: 'https://github.com/rarianaAina/live-erp'
   },
   {
-    id: 'bakery-management',
-    technologies: ['Java', 'Spring Boot', 'Microservices', 'PostgreSQL'],
-    githubUrl: 'https://github.com/rarianaAina/gestionBoulangerie'
+    id: 'fotoanako',
+    technologies: ['React', 'TypeScript', 'Supabase'],
+    siteUrl: 'https://fotoanako.vercel.app',
+    githubUrl: 'https://github.com/rarianaAina/fotoanako'
   },
   {
-    id: 'crypto-mobile',
-    technologies: ['React Native', 'REST API', 'Firebase'],
-    githubUrl: 'https://github.com/rarianaAina/mobileCrypto'
-  },
-  {
-    id: 'human-hr',
-    technologies: ['Java', 'Spring Boot', 'Vue.js', 'PostgreSQL'],
-    githubUrl: 'https://github.com/rarianaAina/humanResource'
-  },
-  {
-    id: 'football-analytics',
-    technologies: ['Python', 'MySQL', 'Matplotlib'],
-    githubUrl: 'https://github.com/rarianaAina/analyse-football'
-  },
-  {
-    id: 'auth-module',
-    technologies: ['Node.js', 'Express', 'JWT'],
-    githubUrl: 'https://github.com/rarianaAina/authNode'
-  },
-  {
-    id: 'real-estate-api',
-    technologies: ['Java', 'Spring Boot', 'REST API'],
-    githubUrl: 'https://github.com/rarianaAina/immoAPI'
+    id: 'school-management',
+    technologies: ['React', 'TypeScript', 'Supabase'],
+    githubUrl: 'https://github.com/rarianaAina/school-management'
   }
 ]
