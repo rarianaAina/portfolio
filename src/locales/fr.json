@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Rariana Aina Andriamiadana — Développeur full-stack",
-    "description": "Portfolio de Rariana Aina Andriamiadana, développeur full-stack spécialisé en Java, Spring Boot et développement web moderne."
+    "title": "Rariana Aina Andriamiadana — Développeur full stack freelance",
+    "description": "Développeur full stack freelance (.NET, Java Spring Boot, React, TypeScript, Supabase) : sites et applications web de A à Z pour des clients en France et à l'international. Disponible en télétravail."
   },
   "nav": {
     "primary": "Navigation principale",
@@ -17,72 +17,136 @@
     "theme_dark": "Activer le thème sombre",
     "theme_light": "Activer le thème clair",
     "language": "Choix de la langue",
-    "skip_to_content": "Aller au contenu principal"
+    "skip_to_content": "Aller au contenu principal",
+    "cv_path": "/cv/Rariana-Andriamiadana-CV-Developpeur-Full-Stack-FR.pdf",
+    "cv_file_name": "Rariana-Andriamiadana-CV-Developpeur-Full-Stack-FR.pdf",
+    "experience": "Parcours"
   },
   "hero": {
     "greeting": "Bonjour, je suis",
     "name": "Rariana Aina Andriamiadana",
-    "role": "Développeur full-stack",
-    "subtitle": "Je conçois des applications web robustes et maintenables, principalement avec Java et Spring Boot côté serveur, Vue.js et React côté interface.",
-    "cta_projects": "Voir mes projets",
+    "role": "Développeur full stack freelance",
+    "subtitle": "Je conçois et développe des sites et applications web de A à Z pour des clients en France et à l'international : .NET et Java côté serveur, React et TypeScript côté interface, Supabase et Odoo quand le projet s'y prête. Disponible en télétravail.",
+    "cta_projects": "Voir mes réalisations",
     "cta_contact": "Me contacter",
-    "scroll": "Faire défiler vers la suite"
+    "scroll": "Faire défiler vers la suite",
+    "tags": [
+      "C# / .NET · Java / Spring Boot",
+      "React · TypeScript · Next.js",
+      "Supabase · PostgreSQL · SQL Server",
+      "Odoo 19 · Python"
+    ]
   },
   "about": {
     "title": "À propos de moi",
-    "subtitle": "Passionné par le développement",
+    "subtitle": "Du besoin métier à l'application en ligne",
     "portrait_alt": "Portrait de Rariana Aina Andriamiadana",
-    "description_1": "Développeur full-stack, je travaille sur l'ensemble de la chaîne, du modèle de données jusqu'à l'interface utilisateur. Ce qui m'intéresse le plus : transformer un besoin métier flou en une application claire et fiable.",
-    "description_2": "Mon terrain principal est l'écosystème Java avec Spring Boot, complété par des interfaces modernes en Vue.js et React. J'accorde de l'importance au code lisible, testé et documenté, ainsi qu'aux bases de données bien modélisées.",
-    "description_3": "En dehors du code, je suis les évolutions de l'écosystème, je contribue à des projets open source et j'aime partager ce que j'apprends avec la communauté.",
-    "highlight_fullstack": "Développement full-stack",
-    "highlight_architecture": "Architecture logicielle",
-    "highlight_api": "Conception d'API REST"
+    "description_1": "Développeur full stack freelance, je réalise à distance des sites et applications web pour des clients en France, comme le site de réservation de Harrys Studio ou la refonte du site d'Agentova.ai. J'interviens sur toute la chaîne : recueil des besoins, modèle de données, interface, mise en ligne et évolutions.",
+    "description_2": "Chez OPTIMADA, j'ai fait évoluer une application RH utilisée par des entreprises de 300 à 2 000 salariés et participé à sa migration vers .NET et React, puis développé un portail client en Spring Boot et React synchronisé avec Sage 100cloud CRM. Chez KASIA Consulting, j'ai paramétré Odoo 19 et développé des modules sur mesure en Python.",
+    "description_3": "Avant le développement, j'ai passé quatre ans chez Webhelp, au support technique puis au contrôle de la conformité des accès aux systèmes d'information. J'en garde la rigueur, le sens du service et l'habitude des exigences de clients internationaux.",
+    "highlight_fullstack": "Développement full stack de A à Z",
+    "highlight_architecture": "Applications métier et SaaS",
+    "highlight_api": "API REST et intégrations",
+    "languages_label": "Langues :",
+    "languages": "malgache (maternelle), français (C1), anglais (professionnel)"
   },
   "projects": {
-    "title": "Mes projets",
-    "subtitle": "Une sélection de projets personnels et académiques qui illustrent ma façon de concevoir et de structurer une application.",
-    "github": "Voir le code",
+    "title": "Réalisations et projets",
+    "subtitle": "Des sites livrés à des clients, des applications en ligne que vous pouvez essayer, et le code de chacune.",
+    "github": "Code",
     "github_aria": "Voir le code de {name} sur GitHub",
     "view_all": "Tous mes dépôts sur GitHub",
+    "clients_title": "Réalisations clients",
+    "clients_subtitle": "Sites conçus et livrés en freelance, à distance, pour des clients en France.",
+    "visit_site": "Voir le site",
+    "featured_title": "Applications en ligne",
+    "featured_subtitle": "Des applications complètes que j'ai conçues, développées et déployées, avec démo et code source.",
+    "demo": "Démo",
+    "demo_aria": "Ouvrir la démo de {name}",
+    "odoo_title": "Spécialité : Odoo",
+    "odoo_text": "J'interviens aussi comme consultant Odoo fonctionnel et technique : paramétrage d'Odoo 19, imports de données, recette, formation et développement de modules en Python, XML, QWeb et OWL, par exemple pour les paiements Mobile Money en caisse ou le suivi des téléphones par IMEI.",
+    "odoo_link": "Voir mon portfolio Odoo",
+    "other_title": "Autres projets",
+    "other_subtitle": "Projets personnels et académiques antérieurs, en Java, JavaScript et React Native.",
+    "open_gallery": "Voir les captures ({count})",
+    "open_shot": "Agrandir la capture : {caption}",
+    "gallery_label": "Captures du projet {name}",
+    "previous": "Capture précédente",
+    "next": "Capture suivante",
+    "close": "Fermer",
+    "counter": "{current} / {total}",
     "items": {
+      "harrys-studio": {
+        "name": "Harrys Studio",
+        "sector": "Salon d'onglerie · Lagny-sur-Marne, France",
+        "description": "Site complet conçu et développé de A à Z : réservation en ligne avec calendrier des disponibilités, choix du créneau et de la prestataire, carte des prestations, galerie, avis clientes, espace de connexion et pages légales.",
+        "shots": {
+          "home": "Page d'accueil : présentation du salon et accès direct à la prise de rendez-vous.",
+          "booking": "Réservation : calendrier des disponibilités et créneaux libres du jour."
+        }
+      },
+      "agentova": {
+        "name": "Agentova.ai",
+        "sector": "Éditeur SaaS d'agents IA · France",
+        "description": "Refonte complète du site vitrine d'un éditeur SaaS d'agents IA pour les TPE-PME, avec le passage d'une identité sombre à une identité claire.",
+        "shots": {
+          "home": "Page d'accueil du site vitrine refondu."
+        }
+      },
+      "live-erp": {
+        "name": "LiveERP",
+        "description": "ERP pour la vente en live sur Facebook et TikTok : fournisseurs, achats, contrôle pièce par pièce, console de live, préparation des colis, livreurs, retours et rapports. Sécurité par RLS testée en SQL, intégration continue et version bureau avec Tauri."
+      },
+      "fotoanako": {
+        "name": "Fotoanako",
+        "description": "Prise de rendez-vous en ligne en marque blanche pour salons, spas ou tatoueurs : vitrine, réservation, administration, fidélité et e-mails automatiques. Redéployable pour chaque client grâce à des préréglages métier.",
+        "shots": {
+          "home": "Vitrine de démonstration, sous une marque générique."
+        }
+      },
+      "revisions-qcm": {
+        "name": "Révisions QCM",
+        "description": "Importe un cours en PDF et génère des QCM corrigés avec score. Intègre plusieurs fournisseurs d'IA (Gemini, Groq, OpenAI, Anthropic) avec bascule automatique.",
+        "shots": {
+          "dashboard": "Tableau de bord : cours importés, QCM générés et scores obtenus."
+        }
+      },
+      "metiers-tension": {
+        "name": "Métiers en tension",
+        "description": "Site public des métiers en pénurie au Luxembourg et en France, mis à jour chaque jour sans intervention : listes officielles (ADEM, API Légifrance), offres France Travail et offres en télétravail, via GitHub Actions.",
+        "shots": {
+          "home": "Recherche parmi les métiers en tension, par pays, région et secteur."
+        }
+      },
+      "school-management": {
+        "name": "Scolaria",
+        "description": "SaaS de gestion scolaire multi-établissement : élèves, emplois du temps, notes, frais, présences et rôles. Contraintes en base contre les conflits d'emploi du temps, documentation d'architecture et tests."
+      },
       "financial-analysis": {
-        "name": "Analyse financière full-stack",
-        "description": "Application d'analyse financière avec un backend Spring Boot et une interface web. Gestion des états financiers et tableaux de bord analytiques."
-      },
-      "airline-management": {
-        "name": "Gestion aérienne",
-        "description": "Backend de gestion des vols et des avions avec Spring Boot. CRUD complet et modélisation de relations complexes."
-      },
-      "bakery-management": {
-        "name": "Gestion de boulangerie",
-        "description": "Système de gestion pour une boulangerie : stocks, ventes et employés, organisé en microservices."
+        "name": "Analyse financière",
+        "description": "Bilan, compte de résultat et ratios financiers commentés par IA, avec une interface Vue.js."
       },
       "crypto-mobile": {
         "name": "Suivi crypto mobile",
-        "description": "Application mobile de suivi des cryptomonnaies, avec historique des transactions et analyse de marché."
+        "description": "Application mobile : cours, portefeuille et historique des transactions."
       },
-      "human-hr": {
-        "name": "HumanHR — Gestion RH",
-        "description": "Plateforme de gestion des ressources humaines : employés, demandes de congés et gestion de la paie."
+      "crypto-web": {
+        "name": "Plateforme crypto web",
+        "description": "Dépôts, retraits et gestion de fonds, avec front office et back office."
       },
-      "football-analytics": {
-        "name": "Analyse football",
-        "description": "Analyse statistique de matchs de football, avec visualisation des données et modèles de prédiction."
+      "football-vision": {
+        "name": "Analyse d'image football",
+        "description": "Vision par ordinateur sur une image de terrain : positions des joueurs et détection des hors-jeu."
       },
-      "auth-module": {
-        "name": "Module d'authentification",
-        "description": "Module d'authentification sécurisé avec JWT, rôles et permissions, prêt à intégrer dans une application Node.js."
-      },
-      "real-estate-api": {
-        "name": "API immobilière",
-        "description": "API REST pour une plateforme immobilière : gestion des biens, recherche avancée et géolocalisation."
+      "flight-booking": {
+        "name": "Réservation de vols",
+        "description": "Gestion et réservation de vols, avec import de données CSV."
       }
     }
   },
   "skills": {
     "title": "Mes compétences",
-    "subtitle": "Les technologies et outils que j'utilise au quotidien pour concevoir et livrer des applications.",
+    "subtitle": "Les technologies et outils que j'utilise pour concevoir, livrer et faire évoluer des applications.",
     "main_title": "Technologies principales",
     "backend": "Backend",
     "frontend": "Frontend",
@@ -116,13 +180,85 @@
     "form_subject_placeholder": "Sujet de votre message",
     "form_message": "Message",
     "form_message_placeholder": "Votre message",
-    "form_submit": "Envoyer le message",
-    "form_sending": "Envoi en cours…",
-    "form_success": "Merci, votre message a bien été envoyé. Je vous réponds au plus vite.",
-    "form_error": "L'envoi a échoué. Vous pouvez me joindre directement à {email}."
+    "form_submit": "Préparer mon e-mail",
+    "form_opened": "Votre messagerie s'ouvre avec le message prêt à envoyer. Si rien ne s'ouvre, écrivez-moi directement à {email}.",
+    "form_hint": "Le bouton ouvre votre messagerie avec le message déjà rempli : il ne reste qu'à l'envoyer."
   },
   "footer": {
     "copyright": "© {year} Rariana Aina Andriamiadana. Tous droits réservés.",
     "built_with": "Conçu avec Vue.js et Tailwind CSS."
+  },
+  "experience": {
+    "title": "Mon parcours",
+    "subtitle": "Du support technique au développement full stack, en passant par la conformité des systèmes d'information.",
+    "education_title": "Formation",
+    "cv_note": "Le détail complet de mon parcours figure dans mon CV.",
+    "cv_link": "Télécharger le CV",
+    "items": [
+      {
+        "role": "Développeur full stack freelance",
+        "org": "Entreprise individuelle · télétravail, clients en France",
+        "period": "Oct. 2026 – aujourd'hui",
+        "bullets": [
+          "Harrys Studio (salon d'onglerie) : site complet avec réservation en ligne, calendrier des disponibilités, choix du créneau et de la prestataire (React, Vite, Supabase).",
+          "Agentova.ai (éditeur SaaS d'agents IA) : refonte complète du site vitrine, passage d'un thème sombre à un thème clair (Webflow).",
+          "Missions entièrement à distance : recueil des besoins, développement, mise en ligne et évolutions."
+        ]
+      },
+      {
+        "role": "Développeur Odoo (Python)",
+        "org": "KASIA Consulting",
+        "period": "Juin 2026 – sept. 2026",
+        "bullets": [
+          "Paramétrage d'Odoo 19 (Community et Enterprise) et développement de modules spécifiques : Python, XML, QWeb, OWL.",
+          "Analyse des processus de gestion des clients, imports de données et recette.",
+          "Support utilisateur et résolution des incidents après la mise en production."
+        ]
+      },
+      {
+        "role": "Développeur full stack",
+        "org": "OPTIMADA",
+        "period": "Sept. 2025 – mai 2026",
+        "bullets": [
+          "Évolution de RADIAN, application RH utilisée par des entreprises de 300 à 2 000 salariés, et participation à sa migration de PHP vers .NET, React et SQL Server.",
+          "Portail client en Java Spring Boot et React, synchronisé avec Sage 100cloud CRM.",
+          "API REST, synchronisations de données SQL Server, modules métier (congés, pointages, plannings, recrutements, circuits de validation).",
+          "Tout le cycle de développement : analyse, conception, tests et déploiement, avec suivi dans Jira."
+        ]
+      },
+      {
+        "role": "Administrateur des logs, référent client",
+        "org": "Webhelp Madagascar (groupe Concentrix)",
+        "period": "Août 2022 – août 2024",
+        "bullets": [
+          "Contrôle de la conformité des comptes, des habilitations et des accès aux systèmes d'information d'environ 500 collaborateurs.",
+          "Interlocuteur direct du client pour une équipe de 3 personnes ; 2 audits clients annuels réussis.",
+          "Formation des collaborateurs aux règles de sécurité et de conformité."
+        ]
+      },
+      {
+        "role": "Conseiller client, support technique",
+        "org": "Webhelp Madagascar (groupe Concentrix)",
+        "period": "Déc. 2020 – août 2022",
+        "bullets": [
+          "Diagnostic et résolution des difficultés techniques et informatiques des clients."
+        ]
+      },
+      {
+        "role": "Responsable informatique",
+        "org": "Phénix Madagascar",
+        "period": "Févr. 2020 – sept. 2020",
+        "bullets": [
+          "Développement d'une application web de gestion du personnel, administration des applications CRM et maintenance informatique."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Licence en Informatique",
+        "school": "IT University, Antananarivo",
+        "period": "2018 – 2026"
+      }
+    ]
   }
 }

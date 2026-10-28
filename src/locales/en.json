@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Rariana Aina Andriamiadana — Full-stack developer",
-    "description": "Portfolio of Rariana Aina Andriamiadana, a full-stack developer specialising in Java, Spring Boot and modern web development."
+    "title": "Rariana Aina Andriamiadana — Freelance full stack developer",
+    "description": "Freelance full stack developer (.NET, Java Spring Boot, React, TypeScript, Supabase): websites and web applications built end to end for clients in France and worldwide. Available for remote work."
   },
   "nav": {
     "primary": "Main navigation",
@@ -17,72 +17,136 @@
     "theme_dark": "Switch to dark theme",
     "theme_light": "Switch to light theme",
     "language": "Language selection",
-    "skip_to_content": "Skip to main content"
+    "skip_to_content": "Skip to main content",
+    "cv_path": "/cv/Rariana-Andriamiadana-CV-Full-Stack-Developer-EN.pdf",
+    "cv_file_name": "Rariana-Andriamiadana-CV-Full-Stack-Developer-EN.pdf",
+    "experience": "Experience"
   },
   "hero": {
     "greeting": "Hi, I'm",
     "name": "Rariana Aina Andriamiadana",
-    "role": "Full-stack developer",
-    "subtitle": "I build robust, maintainable web applications — mainly with Java and Spring Boot on the server side, Vue.js and React on the front end.",
-    "cta_projects": "View my projects",
+    "role": "Freelance full stack developer",
+    "subtitle": "I design and build websites and web applications end to end for clients in France and worldwide: .NET and Java on the server, React and TypeScript on the front end, Supabase and Odoo when the project calls for it. Available for remote work.",
+    "cta_projects": "See my work",
     "cta_contact": "Get in touch",
-    "scroll": "Scroll to the next section"
+    "scroll": "Scroll to the next section",
+    "tags": [
+      "C# / .NET · Java / Spring Boot",
+      "React · TypeScript · Next.js",
+      "Supabase · PostgreSQL · SQL Server",
+      "Odoo 19 · Python"
+    ]
   },
   "about": {
     "title": "About me",
-    "subtitle": "Driven by building things that work",
+    "subtitle": "From business need to live application",
     "portrait_alt": "Portrait of Rariana Aina Andriamiadana",
-    "description_1": "As a full-stack developer I work across the whole chain, from the data model to the user interface. What I enjoy most is turning a fuzzy business need into a clear, reliable application.",
-    "description_2": "My main ground is the Java ecosystem with Spring Boot, paired with modern front ends in Vue.js and React. I care about readable, tested and documented code, and about well-designed databases.",
-    "description_3": "Away from the editor I follow how the ecosystem evolves, contribute to open source projects, and enjoy sharing what I learn with the community.",
-    "highlight_fullstack": "Full-stack development",
-    "highlight_architecture": "Software architecture",
-    "highlight_api": "REST API design"
+    "description_1": "As a freelance full stack developer, I build websites and web applications remotely for clients in France, such as the Harrys Studio booking site or the redesign of the Agentova.ai website. I cover the whole chain: requirements, data model, interface, go-live and ongoing updates.",
+    "description_2": "At OPTIMADA, I evolved an HR application used by companies of 300 to 2,000 employees and took part in its migration to .NET and React, then built a customer portal in Spring Boot and React synchronized with Sage 100cloud CRM. At KASIA Consulting, I configured Odoo 19 and developed custom modules in Python.",
+    "description_3": "Before development, I spent four years at Webhelp, first in technical support, then auditing access compliance on information systems. I kept the rigor, the service mindset and the habit of working to international clients' requirements.",
+    "highlight_fullstack": "End-to-end full stack development",
+    "highlight_architecture": "Business applications and SaaS",
+    "highlight_api": "REST APIs and integrations",
+    "languages_label": "Languages:",
+    "languages": "Malagasy (native), French (C1), English (professional)"
   },
   "projects": {
-    "title": "My projects",
-    "subtitle": "A selection of personal and academic projects that show how I design and structure an application.",
-    "github": "View code",
-    "github_aria": "View the source code of {name} on GitHub",
+    "title": "Work and projects",
+    "subtitle": "Websites delivered to clients, live applications you can try, and the source code of each.",
+    "github": "Code",
+    "github_aria": "View the {name} code on GitHub",
     "view_all": "All my repositories on GitHub",
+    "clients_title": "Client work",
+    "clients_subtitle": "Websites designed and delivered as a freelancer, remotely, for clients in France.",
+    "visit_site": "Visit site",
+    "featured_title": "Live applications",
+    "featured_subtitle": "Complete applications I designed, built and deployed, with a demo and source code.",
+    "demo": "Demo",
+    "demo_aria": "Open the {name} demo",
+    "odoo_title": "Specialty: Odoo",
+    "odoo_text": "I also work as an Odoo functional and technical consultant: Odoo 19 configuration, data imports, acceptance testing, training and module development in Python, XML, QWeb and OWL, for instance for Mobile Money payments at the till or IMEI-based phone tracking.",
+    "odoo_link": "See my Odoo portfolio",
+    "other_title": "Other projects",
+    "other_subtitle": "Earlier personal and academic projects, in Java, JavaScript and React Native.",
+    "open_gallery": "View screenshots ({count})",
+    "open_shot": "Enlarge screenshot: {caption}",
+    "gallery_label": "Screenshots of {name}",
+    "previous": "Previous screenshot",
+    "next": "Next screenshot",
+    "close": "Close",
+    "counter": "{current} / {total}",
     "items": {
+      "harrys-studio": {
+        "name": "Harrys Studio",
+        "sector": "Nail salon · Lagny-sur-Marne, France",
+        "description": "Complete website designed and built end to end: online booking with an availability calendar, time slot and technician selection, service menu, gallery, customer reviews, login area and legal pages.",
+        "shots": {
+          "home": "Home page: salon presentation with direct access to booking.",
+          "booking": "Booking: availability calendar and the day's free time slots."
+        }
+      },
+      "agentova": {
+        "name": "Agentova.ai",
+        "sector": "AI agents SaaS company · France",
+        "description": "Complete rebuild of the marketing website of a SaaS company providing AI agents for small businesses, moving its identity from a dark to a light theme.",
+        "shots": {
+          "home": "Home page of the rebuilt marketing website."
+        }
+      },
+      "live-erp": {
+        "name": "LiveERP",
+        "description": "ERP for live-stream selling on Facebook and TikTok: suppliers, purchasing, item-by-item checks, live console, parcel preparation, couriers, returns and reports. RLS security tested in SQL, continuous integration and a Tauri desktop build."
+      },
+      "fotoanako": {
+        "name": "Fotoanako",
+        "description": "White-label online booking for salons, spas or tattoo studios: storefront, booking, admin, loyalty and automated emails. Redeployable for each client through business presets.",
+        "shots": {
+          "home": "Demo storefront under a generic brand."
+        }
+      },
+      "revisions-qcm": {
+        "name": "Révisions QCM",
+        "description": "Imports a PDF course and generates graded multiple-choice quizzes. Integrates several AI providers (Gemini, Groq, OpenAI, Anthropic) with automatic fallback.",
+        "shots": {
+          "dashboard": "Dashboard: imported courses, generated quizzes and scores."
+        }
+      },
+      "metiers-tension": {
+        "name": "Métiers en tension",
+        "description": "Public website listing shortage occupations in Luxembourg and France, updated daily with no manual work: official lists (ADEM, Légifrance API), France Travail offers and remote job offers, via GitHub Actions.",
+        "shots": {
+          "home": "Search across shortage occupations by country, region and sector."
+        }
+      },
+      "school-management": {
+        "name": "Scolaria",
+        "description": "Multi-school management SaaS: students, timetables, grades, fees, attendance and roles. Database constraints prevent timetable conflicts, with architecture documentation and tests."
+      },
       "financial-analysis": {
-        "name": "Full-stack financial analysis",
-        "description": "Financial analysis application with a Spring Boot backend and a web interface. Financial statement management and analytical dashboards."
-      },
-      "airline-management": {
-        "name": "Airline management",
-        "description": "Flight and aircraft management backend built with Spring Boot. Full CRUD and complex relational modelling."
-      },
-      "bakery-management": {
-        "name": "Bakery management",
-        "description": "Management system for a bakery: inventory, sales and staff, organised as microservices."
+        "name": "Financial analysis",
+        "description": "Balance sheet, income statement and financial ratios with AI commentary, with a Vue.js interface."
       },
       "crypto-mobile": {
-        "name": "Crypto tracker (mobile)",
-        "description": "Mobile application for tracking cryptocurrencies, with transaction history and market analysis."
+        "name": "Mobile crypto tracker",
+        "description": "Mobile app: prices, wallet and transaction history."
       },
-      "human-hr": {
-        "name": "HumanHR — HR management",
-        "description": "Human resources platform covering employees, leave requests and payroll management."
+      "crypto-web": {
+        "name": "Web crypto platform",
+        "description": "Deposits, withdrawals and fund management, with a front office and a back office."
       },
-      "football-analytics": {
-        "name": "Football analytics",
-        "description": "Statistical analysis of football matches, with data visualisation and prediction models."
+      "football-vision": {
+        "name": "Football image analysis",
+        "description": "Computer vision on a pitch image: player positions and offside detection."
       },
-      "auth-module": {
-        "name": "Authentication module",
-        "description": "Secure authentication module with JWT, roles and permissions, ready to plug into any Node.js application."
-      },
-      "real-estate-api": {
-        "name": "Real-estate API",
-        "description": "REST API for a real-estate platform: property management, advanced search and geolocation."
+      "flight-booking": {
+        "name": "Flight booking",
+        "description": "Flight management and booking, with CSV data import."
       }
     }
   },
   "skills": {
     "title": "My skills",
-    "subtitle": "The technologies and tools I use day to day to design and ship applications.",
+    "subtitle": "The technologies and tools I use to design, ship and evolve applications.",
     "main_title": "Core technologies",
     "backend": "Backend",
     "frontend": "Frontend",
@@ -116,13 +180,85 @@
     "form_subject_placeholder": "Subject of your message",
     "form_message": "Message",
     "form_message_placeholder": "Your message",
-    "form_submit": "Send message",
-    "form_sending": "Sending…",
-    "form_success": "Thank you, your message has been sent. I'll get back to you shortly.",
-    "form_error": "Sending failed. You can reach me directly at {email}."
+    "form_submit": "Prepare my email",
+    "form_opened": "Your email app is opening with the message ready to send. If nothing opens, write to me directly at {email}.",
+    "form_hint": "The button opens your email app with the message already filled in: you just need to send it."
   },
   "footer": {
     "copyright": "© {year} Rariana Aina Andriamiadana. All rights reserved.",
     "built_with": "Built with Vue.js and Tailwind CSS."
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "From technical support to full stack development, by way of information system compliance.",
+    "education_title": "Education",
+    "cv_note": "My full background is detailed in my résumé.",
+    "cv_link": "Download résumé",
+    "items": [
+      {
+        "role": "Freelance full stack developer",
+        "org": "Sole proprietorship · remote, clients in France",
+        "period": "Oct. 2026 – present",
+        "bullets": [
+          "Harrys Studio (nail salon): complete website with online booking, availability calendar, time slot and technician selection (React, Vite, Supabase).",
+          "Agentova.ai (AI agents SaaS company): complete rebuild of the marketing website, moving from a dark to a light theme (Webflow).",
+          "Fully remote engagements: requirements, development, go-live and ongoing updates."
+        ]
+      },
+      {
+        "role": "Odoo developer (Python)",
+        "org": "KASIA Consulting",
+        "period": "June 2026 – Sept. 2026",
+        "bullets": [
+          "Odoo 19 configuration (Community and Enterprise) and custom module development: Python, XML, QWeb, OWL.",
+          "Analysis of clients' business processes, data imports and acceptance testing.",
+          "User support and incident resolution after go-live."
+        ]
+      },
+      {
+        "role": "Full stack developer",
+        "org": "OPTIMADA",
+        "period": "Sept. 2025 – May 2026",
+        "bullets": [
+          "Evolved RADIAN, an HR application used by companies of 300 to 2,000 employees, and took part in its migration from PHP to .NET, React and SQL Server.",
+          "Customer portal in Java Spring Boot and React, synchronized with Sage 100cloud CRM.",
+          "REST APIs, SQL Server data synchronization, business modules (leave, time tracking, scheduling, recruitment, approval workflows).",
+          "Full development lifecycle: analysis, design, testing and deployment, tracked in Jira."
+        ]
+      },
+      {
+        "role": "Logs administrator, client point of contact",
+        "org": "Webhelp Madagascar (Concentrix group)",
+        "period": "Aug. 2022 – Aug. 2024",
+        "bullets": [
+          "Audited user accounts, permissions and information system access for about 500 employees.",
+          "Direct client point of contact for a team of 3; 2 annual client audits passed.",
+          "Trained employees on security and compliance rules."
+        ]
+      },
+      {
+        "role": "Customer advisor, technical support",
+        "org": "Webhelp Madagascar (Concentrix group)",
+        "period": "Dec. 2020 – Aug. 2022",
+        "bullets": [
+          "Diagnosed and resolved customers' technical and IT issues."
+        ]
+      },
+      {
+        "role": "IT manager",
+        "org": "Phénix Madagascar",
+        "period": "Feb. 2020 – Sept. 2020",
+        "bullets": [
+          "Built a staff management web application, administered the CRM applications and handled IT maintenance."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor's degree (Licence) in Computer Science",
+        "school": "IT University, Antananarivo",
+        "period": "2018 – 2026"
+      }
+    ]
   }
 }

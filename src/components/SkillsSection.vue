@@ -72,27 +72,27 @@ const skillCategories = [
   {
     key: 'backend',
     icon: '⚙️',
-    skills: ['Java', 'Spring Boot', 'Spring Security', 'JPA/Hibernate', 'Maven']
+    skills: ['C# / .NET', 'Java', 'Spring Boot', 'Spring Security', 'JPA/Hibernate', 'Node.js / Express', 'Python']
   },
   {
     key: 'frontend',
     icon: '🎨',
-    skills: ['Vue.js', 'React', 'JavaScript', 'Tailwind CSS', 'HTML5/CSS3']
+    skills: ['React', 'TypeScript', 'JavaScript', 'Next.js', 'Vue.js', 'Tailwind CSS', 'HTML5/CSS3']
   },
   {
     key: 'database',
     icon: '💾',
-    skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'SQL']
+    skills: ['SQL Server', 'PostgreSQL', 'Supabase', 'MySQL', 'MongoDB', 'Redis']
   },
   {
     key: 'devops',
     icon: '🔧',
-    skills: ['Docker', 'Git', 'GitHub Actions', 'Linux', 'Nginx']
+    skills: ['Git', 'GitHub Actions', 'Docker', 'Linux', 'Nginx', 'Vercel']
   },
   {
     key: 'tools',
     icon: '🛠️',
-    skills: ['IntelliJ IDEA', 'VS Code', 'Postman', 'Figma']
+    skills: ['Odoo 19', 'Webflow', 'Jira', 'Postman', 'Figma', 'VS Code', 'IntelliJ IDEA']
   },
   {
     key: 'soft_skills',
@@ -103,12 +103,13 @@ const skillCategories = [
 ]
 
 const mainSkills = [
+  { name: 'C# / .NET', icon: '🟣' },
   { name: 'Java', icon: '☕' },
   { name: 'Spring Boot', icon: '🍃' },
-  { name: 'Vue.js', icon: '💚' },
+  { name: 'React', icon: '⚛️' },
+  { name: 'TypeScript', icon: '🔷' },
+  { name: 'Supabase', icon: '⚡' },
   { name: 'PostgreSQL', icon: '🐘' },
-  { name: 'Tailwind CSS', icon: '🎨' },
-  { name: 'Docker', icon: '🐳' },
-  { name: 'Git', icon: '📝' }
+  { name: 'Docker', icon: '🐳' }
 ]
 </script>

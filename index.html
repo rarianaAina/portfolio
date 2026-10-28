@@ -4,42 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Rariana Aina Andriamiadana — Full-stack developer</title>
+    <title>Rariana Aina Andriamiadana — Freelance full stack developer</title>
     <meta
       name="description"
-      content="Portfolio of Rariana Aina Andriamiadana, a full-stack developer specialising in Java, Spring Boot and modern web development."
+      content="Freelance full stack developer (.NET, Java Spring Boot, React, TypeScript, Supabase): websites and web applications built end to end for clients in France and worldwide. Available for remote work."
     />
     <meta name="author" content="Rariana Aina Andriamiadana" />
     <meta name="theme-color" content="#2563eb" />
+    <link rel="canonical" href="https://rariana-andriamiadana.vercel.app/" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
 
-    <!--
-      Open Graph / Twitter.
-      À faire une fois le domaine définitif connu : remplacer les chemins relatifs
-      par des URL absolues (https://votre-domaine/og-image.png) — LinkedIn et
-      certains agrégateurs n'acceptent pas les chemins relatifs.
-    -->
+    <!-- Open Graph / Twitter : URL absolues, exigées par LinkedIn et certains agrégateurs. -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rariana-andriamiadana.vercel.app/" />
     <meta property="og:site_name" content="Rariana Aina Andriamiadana" />
-    <meta property="og:title" content="Rariana Aina Andriamiadana — Full-stack developer" />
+    <meta property="og:title" content="Rariana Aina Andriamiadana — Freelance full stack developer" />
     <meta
       property="og:description"
-      content="Portfolio of Rariana Aina Andriamiadana, a full-stack developer specialising in Java, Spring Boot and modern web development."
+      content="Websites and web applications built end to end: .NET, Java Spring Boot, React, TypeScript, Supabase. Client work, live demos and source code."
     />
-    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:image" content="https://rariana-andriamiadana.vercel.app/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="fr_FR" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Rariana Aina Andriamiadana — Full-stack developer" />
+    <meta name="twitter:title" content="Rariana Aina Andriamiadana — Freelance full stack developer" />
     <meta
       name="twitter:description"
-      content="Portfolio of Rariana Aina Andriamiadana, a full-stack developer specialising in Java, Spring Boot and modern web development."
+      content="Websites and web applications built end to end: .NET, Java Spring Boot, React, TypeScript, Supabase. Client work, live demos and source code."
     />
-    <meta name="twitter:image" content="/og-image.png" />
+    <meta name="twitter:image" content="https://rariana-andriamiadana.vercel.app/og-image.png" />
+
+    <!-- Données structurées pour les moteurs de recherche. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rariana Aina Andriamiadana",
+        "jobTitle": "Freelance full stack developer",
+        "url": "https://rariana-andriamiadana.vercel.app/",
+        "email": "mailto:rarianamiadana@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Antananarivo", "addressCountry": "MG" },
+        "knowsLanguage": ["mg", "fr", "en"],
+        "knowsAbout": [".NET", "C#", "Java", "Spring Boot", "React", "TypeScript", "Supabase", "PostgreSQL", "Odoo"],
+        "sameAs": ["https://github.com/rarianaAina", "https://www.linkedin.com/in/rariana-aina-andriamiadana"]
+      }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,17 +81,5 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
-
-    <!--
-      Formulaire statique détecté par Netlify Forms au moment du build.
-      L'application Vue poste sur ce même nom ; ne pas supprimer.
-    -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <input type="text" name="subject" />
-      <textarea name="message"></textarea>
-      <input type="text" name="bot-field" />
-    </form>
   </body>
 </html>

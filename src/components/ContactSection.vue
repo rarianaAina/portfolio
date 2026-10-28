@@ -64,25 +64,12 @@
             </div>
           </div>
 
-          <!-- Formulaire (traité par Netlify Forms) -->
+          <!-- Formulaire : ouvre la messagerie du visiteur avec le message prérempli.
+               Aucun service tiers, fonctionne quel que soit l'hébergeur (Vercel, Netlify…). -->
           <div class="animate-slide-up">
             <h3 class="sr-only">{{ t('contact.form_title') }}</h3>
 
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-              class="space-y-6"
-              @submit.prevent="handleSubmit"
-            >
-              <p class="hidden">
-                <label>
-                  Do not fill this out if you are human:
-                  <input v-model="honeypot" name="bot-field" tabindex="-1" autocomplete="off">
-                </label>
-              </p>
-
+            <form class="space-y-6" @submit.prevent="handleSubmit">
               <div v-for="field in fields" :key="field.name">
                 <label
                   :for="field.name"
@@ -104,23 +91,19 @@
                 />
               </div>
 
-              <button type="submit" class="w-full btn-primary" :disabled="status === 'sending'">
-                {{ status === 'sending' ? t('contact.form_sending') : t('contact.form_submit') }}
+              <button type="submit" class="w-full btn-primary">
+                {{ t('contact.form_submit') }}
               </button>
 
               <p
-                v-if="status === 'success'"
+                v-if="status === 'opened'"
                 role="status"
                 class="rounded-lg bg-green-50 dark:bg-green-900/40 px-4 py-3 text-sm text-green-800 dark:text-green-200"
               >
-                {{ t('contact.form_success') }}
+                {{ t('contact.form_opened', { email: site.email }) }}
               </p>
-              <p
-                v-else-if="status === 'error'"
-                role="alert"
-                class="rounded-lg bg-red-50 dark:bg-red-900/40 px-4 py-3 text-sm text-red-800 dark:text-red-200"
-              >
-                {{ t('contact.form_error', { email: site.email }) }}
+              <p v-else class="text-sm text-gray-500 dark:text-gray-400">
+                {{ t('contact.form_hint') }}
               </p>
             </form>
           </div>
@@ -166,28 +149,13 @@ const fields = [
 ]
 
 const form = reactive({ name: '', email: '', subject: '', message: '' })
-const honeypot = ref('')
 const status = ref('idle')
 
-const handleSubmit = async () => {
-  status.value = 'sending'
-  try {
-    const body = new URLSearchParams({
-      'form-name': 'contact',
-      'bot-field': honeypot.value,
-      ...form
-    })
-    const response = await fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body
-    })
-    if (!response.ok) throw new Error(`Netlify Forms responded with ${response.status}`)
-
-    status.value = 'success'
-    Object.assign(form, { name: '', email: '', subject: '', message: '' })
-  } catch {
-    status.value = 'error'
-  }
+// Compose un e-mail prérempli dans la messagerie du visiteur.
+const handleSubmit = () => {
+  const body = `${form.message}\n\n— ${form.name} (${form.email})`
+  const href = `mailto:${site.email}?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(body)}`
+  window.location.href = href
+  status.value = 'opened'
 }
 </script>
