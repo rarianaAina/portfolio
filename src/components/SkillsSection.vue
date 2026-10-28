@@ -92,7 +92,7 @@ const skillCategories = [
   {
     key: 'tools',
     icon: '🛠️',
-    skills: ['Odoo 19', 'Webflow', 'Jira', 'Postman', 'Figma', 'VS Code', 'IntelliJ IDEA']
+    skills: ['Odoo', 'Webflow', 'Jira', 'Postman', 'Figma', 'VS Code', 'IntelliJ IDEA']
   },
   {
     key: 'soft_skills',

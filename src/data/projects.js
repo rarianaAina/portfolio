@@ -28,8 +28,22 @@ export const clientProjects = [
   }
 ]
 
-// Applications personnelles déployées : démo en ligne et code.
+// Applications personnelles : démo en ligne (si elle existe) et code.
 export const featuredProjects = [
+  {
+    id: 'mobi-stock',
+    demoUrl: '',
+    githubUrl: 'https://github.com/rarianaAina/boutique',
+    technologies: ['React', 'TypeScript', 'Tauri', 'SQLite', 'Node.js'],
+    shots: []
+  },
+  {
+    id: 'caisse',
+    demoUrl: '',
+    githubUrl: 'https://github.com/rarianaAina/caisse',
+    technologies: ['React', 'TypeScript', 'Tauri', 'SQLite', 'NestJS', 'PostgreSQL'],
+    shots: []
+  },
   {
     id: 'live-erp',
     demoUrl: 'https://live-erp.vercel.app',

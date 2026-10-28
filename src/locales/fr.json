@@ -34,7 +34,7 @@
       "C# / .NET · Java / Spring Boot",
       "React · TypeScript · Next.js",
       "Supabase · PostgreSQL · SQL Server",
-      "Odoo 19 · Python"
+      "Odoo · Python"
     ]
   },
   "about": {
@@ -42,8 +42,8 @@
     "subtitle": "Du besoin métier à l'application en ligne",
     "portrait_alt": "Portrait de Rariana Aina Andriamiadana",
     "description_1": "Développeur full stack freelance, je réalise à distance des sites et applications web pour des clients en France, comme le site de réservation de Harrys Studio ou la refonte du site d'Agentova.ai. J'interviens sur toute la chaîne : recueil des besoins, modèle de données, interface, mise en ligne et évolutions.",
-    "description_2": "Chez OPTIMADA, j'ai fait évoluer une application RH utilisée par des entreprises de 300 à 2 000 salariés et participé à sa migration vers .NET et React, puis développé un portail client en Spring Boot et React synchronisé avec Sage 100cloud CRM. Chez KASIA Consulting, j'ai paramétré Odoo 19 et développé des modules sur mesure en Python.",
-    "description_3": "Avant le développement, j'ai passé quatre ans chez Webhelp, au support technique puis au contrôle de la conformité des accès aux systèmes d'information. J'en garde la rigueur, le sens du service et l'habitude des exigences de clients internationaux.",
+    "description_2": "Chez OPTIMADA, j'ai fait évoluer une application RH utilisée par des entreprises de 300 à 2 000 salariés et participé à sa migration vers .NET et React, puis développé un portail client en Spring Boot et React synchronisé avec Sage 100cloud CRM. Chez KASIA Consulting, j'ai paramétré Odoo et développé des modules sur mesure en Python.",
+    "description_3": "Avant le développement, j'ai passé deux ans chez Webhelp à contrôler la conformité des comptes et des accès aux systèmes d'information d'environ 500 collaborateurs. J'en garde la rigueur, le sens du service et l'habitude des exigences de clients internationaux.",
     "highlight_fullstack": "Développement full stack de A à Z",
     "highlight_architecture": "Applications métier et SaaS",
     "highlight_api": "API REST et intégrations",
@@ -52,19 +52,19 @@
   },
   "projects": {
     "title": "Réalisations et projets",
-    "subtitle": "Des sites livrés à des clients, des applications en ligne que vous pouvez essayer, et le code de chacune.",
+    "subtitle": "Des sites livrés à des clients, des applications que j'ai conçues de A à Z, et le code de chacune.",
     "github": "Code",
     "github_aria": "Voir le code de {name} sur GitHub",
     "view_all": "Tous mes dépôts sur GitHub",
     "clients_title": "Réalisations clients",
     "clients_subtitle": "Sites conçus et livrés en freelance, à distance, pour des clients en France.",
     "visit_site": "Voir le site",
-    "featured_title": "Applications en ligne",
-    "featured_subtitle": "Des applications complètes que j'ai conçues, développées et déployées, avec démo et code source.",
+    "featured_title": "Mes applications",
+    "featured_subtitle": "Des applications complètes que j'ai conçues et développées, avec le code source et une démo quand elle est en ligne.",
     "demo": "Démo",
     "demo_aria": "Ouvrir la démo de {name}",
     "odoo_title": "Spécialité : Odoo",
-    "odoo_text": "J'interviens aussi comme consultant Odoo fonctionnel et technique : paramétrage d'Odoo 19, imports de données, recette, formation et développement de modules en Python, XML, QWeb et OWL, par exemple pour les paiements Mobile Money en caisse ou le suivi des téléphones par IMEI.",
+    "odoo_text": "J'interviens aussi comme consultant Odoo fonctionnel et technique : paramétrage d'Odoo, imports de données, recette, formation et développement de modules en Python, XML, QWeb et OWL, par exemple pour les paiements Mobile Money en caisse ou le suivi des téléphones par IMEI.",
     "odoo_link": "Voir mon portfolio Odoo",
     "other_title": "Autres projets",
     "other_subtitle": "Projets personnels et académiques antérieurs, en Java, JavaScript et React Native.",
@@ -76,6 +76,14 @@
     "close": "Fermer",
     "counter": "{current} / {total}",
     "items": {
+      "mobi-stock": {
+        "name": "Mobi Stock",
+        "description": "Gestion hors ligne de boutiques de téléphonie et d'informatique : suivi par IMEI (clé de Luhn, unicité sur tout le réseau), caisse, achats avec ventilation des frais, transferts entre boutiques, import Excel, rapports et synchronisation entre boutiques. Application de bureau, logique métier testée sur SQLite."
+      },
+      "caisse": {
+        "name": "Caisse",
+        "description": "Logiciel de caisse hors ligne d'abord, synchronisé au retour de la connexion : multi-entreprise, multi-boutique, multi-caisse, tickets imprimés, back-office web et licences signées vérifiées hors ligne."
+      },
       "harrys-studio": {
         "name": "Harrys Studio",
         "sector": "Salon d'onglerie · Lagny-sur-Marne, France",
@@ -185,12 +193,11 @@
     "form_hint": "Le bouton ouvre votre messagerie avec le message déjà rempli : il ne reste qu'à l'envoyer."
   },
   "footer": {
-    "copyright": "© {year} Rariana Aina Andriamiadana. Tous droits réservés.",
-    "built_with": "Conçu avec Vue.js et Tailwind CSS."
+    "copyright": "© {year} Rariana Aina Andriamiadana. Tous droits réservés."
   },
   "experience": {
     "title": "Mon parcours",
-    "subtitle": "Du support technique au développement full stack, en passant par la conformité des systèmes d'information.",
+    "subtitle": "De la conformité des systèmes d'information au développement full stack et au conseil Odoo.",
     "education_title": "Formation",
     "cv_note": "Le détail complet de mon parcours figure dans mon CV.",
     "cv_link": "Télécharger le CV",
@@ -210,7 +217,7 @@
         "org": "KASIA Consulting",
         "period": "Juin 2026 – sept. 2026",
         "bullets": [
-          "Paramétrage d'Odoo 19 (Community et Enterprise) et développement de modules spécifiques : Python, XML, QWeb, OWL.",
+          "Paramétrage d'Odoo (Community et Enterprise) et développement de modules spécifiques : Python, XML, QWeb, OWL.",
           "Analyse des processus de gestion des clients, imports de données et recette.",
           "Support utilisateur et résolution des incidents après la mise en production."
         ]
@@ -234,14 +241,6 @@
           "Contrôle de la conformité des comptes, des habilitations et des accès aux systèmes d'information d'environ 500 collaborateurs.",
           "Interlocuteur direct du client pour une équipe de 3 personnes ; 2 audits clients annuels réussis.",
           "Formation des collaborateurs aux règles de sécurité et de conformité."
-        ]
-      },
-      {
-        "role": "Conseiller client, support technique",
-        "org": "Webhelp Madagascar (groupe Concentrix)",
-        "period": "Déc. 2020 – août 2022",
-        "bullets": [
-          "Diagnostic et résolution des difficultés techniques et informatiques des clients."
         ]
       },
       {

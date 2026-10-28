@@ -34,7 +34,7 @@
       "C# / .NET · Java / Spring Boot",
       "React · TypeScript · Next.js",
       "Supabase · PostgreSQL · SQL Server",
-      "Odoo 19 · Python"
+      "Odoo · Python"
     ]
   },
   "about": {
@@ -42,8 +42,8 @@
     "subtitle": "From business need to live application",
     "portrait_alt": "Portrait of Rariana Aina Andriamiadana",
     "description_1": "As a freelance full stack developer, I build websites and web applications remotely for clients in France, such as the Harrys Studio booking site or the redesign of the Agentova.ai website. I cover the whole chain: requirements, data model, interface, go-live and ongoing updates.",
-    "description_2": "At OPTIMADA, I evolved an HR application used by companies of 300 to 2,000 employees and took part in its migration to .NET and React, then built a customer portal in Spring Boot and React synchronized with Sage 100cloud CRM. At KASIA Consulting, I configured Odoo 19 and developed custom modules in Python.",
-    "description_3": "Before development, I spent four years at Webhelp, first in technical support, then auditing access compliance on information systems. I kept the rigor, the service mindset and the habit of working to international clients' requirements.",
+    "description_2": "At OPTIMADA, I evolved an HR application used by companies of 300 to 2,000 employees and took part in its migration to .NET and React, then built a customer portal in Spring Boot and React synchronized with Sage 100cloud CRM. At KASIA Consulting, I configured Odoo and developed custom modules in Python.",
+    "description_3": "Before development, I spent two years at Webhelp auditing user accounts and information system access for about 500 employees. I kept the rigor, the service mindset and the habit of working to international clients' requirements.",
     "highlight_fullstack": "End-to-end full stack development",
     "highlight_architecture": "Business applications and SaaS",
     "highlight_api": "REST APIs and integrations",
@@ -52,19 +52,19 @@
   },
   "projects": {
     "title": "Work and projects",
-    "subtitle": "Websites delivered to clients, live applications you can try, and the source code of each.",
+    "subtitle": "Websites delivered to clients, applications I built end to end, and the source code of each.",
     "github": "Code",
     "github_aria": "View the {name} code on GitHub",
     "view_all": "All my repositories on GitHub",
     "clients_title": "Client work",
     "clients_subtitle": "Websites designed and delivered as a freelancer, remotely, for clients in France.",
     "visit_site": "Visit site",
-    "featured_title": "Live applications",
-    "featured_subtitle": "Complete applications I designed, built and deployed, with a demo and source code.",
+    "featured_title": "My applications",
+    "featured_subtitle": "Complete applications I designed and built, with the source code and a live demo when available.",
     "demo": "Demo",
     "demo_aria": "Open the {name} demo",
     "odoo_title": "Specialty: Odoo",
-    "odoo_text": "I also work as an Odoo functional and technical consultant: Odoo 19 configuration, data imports, acceptance testing, training and module development in Python, XML, QWeb and OWL, for instance for Mobile Money payments at the till or IMEI-based phone tracking.",
+    "odoo_text": "I also work as an Odoo functional and technical consultant: Odoo configuration, data imports, acceptance testing, training and module development in Python, XML, QWeb and OWL, for instance for Mobile Money payments at the till or IMEI-based phone tracking.",
     "odoo_link": "See my Odoo portfolio",
     "other_title": "Other projects",
     "other_subtitle": "Earlier personal and academic projects, in Java, JavaScript and React Native.",
@@ -76,6 +76,14 @@
     "close": "Close",
     "counter": "{current} / {total}",
     "items": {
+      "mobi-stock": {
+        "name": "Mobi Stock",
+        "description": "Offline management for phone and computer shops: IMEI tracking (Luhn check, uniqueness across the network), point of sale, purchasing with cost allocation, shop-to-shop transfers, Excel import, reports and synchronization between shops. Desktop application with business logic tested on SQLite."
+      },
+      "caisse": {
+        "name": "Caisse",
+        "description": "Offline-first point of sale, synchronized when the connection returns: multi-company, multi-shop, multi-register, printed receipts, web back office and signed licences verified offline."
+      },
       "harrys-studio": {
         "name": "Harrys Studio",
         "sector": "Nail salon · Lagny-sur-Marne, France",
@@ -185,12 +193,11 @@
     "form_hint": "The button opens your email app with the message already filled in: you just need to send it."
   },
   "footer": {
-    "copyright": "© {year} Rariana Aina Andriamiadana. All rights reserved.",
-    "built_with": "Built with Vue.js and Tailwind CSS."
+    "copyright": "© {year} Rariana Aina Andriamiadana. All rights reserved."
   },
   "experience": {
     "title": "Experience",
-    "subtitle": "From technical support to full stack development, by way of information system compliance.",
+    "subtitle": "From information system compliance to full stack development and Odoo consulting.",
     "education_title": "Education",
     "cv_note": "My full background is detailed in my résumé.",
     "cv_link": "Download résumé",
@@ -210,7 +217,7 @@
         "org": "KASIA Consulting",
         "period": "June 2026 – Sept. 2026",
         "bullets": [
-          "Odoo 19 configuration (Community and Enterprise) and custom module development: Python, XML, QWeb, OWL.",
+          "Odoo configuration (Community and Enterprise) and custom module development: Python, XML, QWeb, OWL.",
           "Analysis of clients' business processes, data imports and acceptance testing.",
           "User support and incident resolution after go-live."
         ]
@@ -234,14 +241,6 @@
           "Audited user accounts, permissions and information system access for about 500 employees.",
           "Direct client point of contact for a team of 3; 2 annual client audits passed.",
           "Trained employees on security and compliance rules."
-        ]
-      },
-      {
-        "role": "Customer advisor, technical support",
-        "org": "Webhelp Madagascar (Concentrix group)",
-        "period": "Dec. 2020 – Aug. 2022",
-        "bullets": [
-          "Diagnosed and resolved customers' technical and IT issues."
         ]
       },
       {
