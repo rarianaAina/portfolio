@@ -5,6 +5,6 @@ export const site = {
   githubUrl: 'https://github.com/rarianaAina',
   linkedinUrl: 'https://www.linkedin.com/in/rariana-aina-andriamiadana',
   // Le CV (un par langue) est défini dans les locales : nav.cv_path et nav.cv_file_name.
-  // Portfolio « consultant Odoo » (branche main) : à renseigner une fois publié, pour le lien croisé.
-  odooUrl: ''
+  // Portfolio « consultant Odoo » (branche main, publié sur Netlify), pour le lien croisé.
+  odooUrl: 'https://rariana-andriamiadana.netlify.app'
 }
