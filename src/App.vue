@@ -20,7 +20,6 @@
         class="container-max section-padding text-center text-sm text-gray-600 dark:text-gray-400 space-y-1"
       >
         <p>{{ t('footer.copyright', { year: currentYear }) }}</p>
-        <p>{{ t('footer.built_with') }}</p>
       </div>
     </footer>
   </div>

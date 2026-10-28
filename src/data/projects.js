@@ -84,6 +84,16 @@ export const otherProjects = [
     siteUrl: 'https://harrys-studio.com'
   },
   {
+    id: 'mobi-stock',
+    technologies: ['React', 'TypeScript', 'Tauri', 'SQLite'],
+    githubUrl: 'https://github.com/rarianaAina/boutique'
+  },
+  {
+    id: 'caisse',
+    technologies: ['React', 'TypeScript', 'Tauri', 'NestJS'],
+    githubUrl: 'https://github.com/rarianaAina/caisse'
+  },
+  {
     id: 'live-erp',
     technologies: ['React', 'TypeScript', 'Supabase', 'Tauri'],
     siteUrl: 'https://live-erp.vercel.app',

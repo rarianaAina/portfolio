@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Rariana Aina Andriamiadana — Consultant Odoo fonctionnel & technique",
-    "description": "Consultant Odoo fonctionnel et technique : paramétrage, support utilisateur, recette, formation et développement de modules Odoo 19 pour des PME."
+    "description": "Consultant Odoo fonctionnel et technique : paramétrage, support utilisateur, recette, formation et développement de modules Odoo pour des PME."
   },
   "nav": {
     "primary": "Navigation principale",
@@ -28,7 +28,7 @@
     "role": "Consultant Odoo fonctionnel & technique",
     "subtitle": "J'accompagne des PME dans le paramétrage, le support et l'évolution de leur ERP Odoo : cadrage des besoins, configuration des applications, imports de données, recette et formation des utilisateurs — et développement de modules sur mesure quand le standard ne suffit pas.",
     "tags": [
-      "Odoo 19 Community & Enterprise",
+      "Odoo Community & Enterprise",
       "Ventes · Achats · Stock · Point de vente",
       "Comptabilité · RH · Paie"
     ],
@@ -41,7 +41,7 @@
     "subtitle": "Du besoin métier à l'ERP qui tourne",
     "portrait_alt": "Portrait de Rariana Aina Andriamiadana",
     "description_1": "De juin à septembre 2026, j'ai travaillé sur Odoo chez KASIA Consulting, un cabinet de conseil et d'intégration. J'y suis intervenu auprès de PME de secteurs très différents — distribution de téléphonie, conseil, transit maritime, industrie — de l'atelier de cadrage jusqu'au support après la mise en production.",
-    "description_2": "Avant Odoo, j'ai passé près de deux ans au support client technique, puis deux ans à gérer les comptes utilisateurs, les habilitations et la formation des nouveaux collaborateurs. J'en garde des réflexes utiles au quotidien : écouter l'utilisateur, reproduire le problème, expliquer la solution simplement.",
+    "description_2": "Avant Odoo, j'ai passé deux ans chez Webhelp à gérer les comptes utilisateurs, les habilitations et la formation des nouveaux collaborateurs. J'en garde des réflexes utiles au quotidien : écouter l'utilisateur, comprendre le problème, expliquer la solution simplement.",
     "description_3": "Mon parcours de développeur (Java, .NET, Vue.js, React, SQL) me permet d'aller plus loin que le paramétrage quand c'est nécessaire : modules Python, vues XML, rapports QWeb, imports et contrôles de données en PostgreSQL.",
     "highlight_functional": "Paramétrage fonctionnel Odoo",
     "highlight_support": "Support et formation des utilisateurs",
@@ -72,7 +72,7 @@
         "period": "Juin 2026 – sept. 2026",
         "bullets": [
           "Cadrage fonctionnel et analyse des besoins avec les clients : ateliers, comptes rendus, questions de clarification.",
-          "Paramétrage d'Odoo 19 (Community et Enterprise) : ventes, achats, stock multi-entrepôts, point de vente, facturation, comptabilité, employés, paie, notes de frais.",
+          "Paramétrage d'Odoo (Community et Enterprise) : ventes, achats, stock multi-entrepôts, point de vente, facturation, comptabilité, employés, paie, notes de frais.",
           "Imports de données (articles, stocks, commandes fournisseurs) et contrôle de leur cohérence avant validation.",
           "Recette interne puis recette avec le client avant chaque mise en production.",
           "Support utilisateur et traitement des retours clients après la mise en production, suivi des anomalies jusqu'à leur correction.",
@@ -99,14 +99,6 @@
           "Gestion et contrôle des comptes utilisateurs, des habilitations et des accès aux systèmes d'information.",
           "Formation des nouveaux collaborateurs aux règles de sécurité et de conformité.",
           "Accompagnement des audits clients et suivi des actions correctives."
-        ]
-      },
-      {
-        "role": "Customer Advisor",
-        "org": "Webhelp Madagascar",
-        "period": "Déc. 2020 – août 2022",
-        "bullets": [
-          "Assistance aux clients rencontrant des problèmes techniques et informatiques."
         ]
       }
     ],
@@ -163,7 +155,7 @@
           "Rapport de contrôle à faire signer par le responsable."
         ],
         "technical": [
-          "Deux modules Odoo 19 : saisie en caisse (OWL, fonctionne aussi hors connexion) et rapprochement (modèles, assistant d'import, rapport QWeb).",
+          "Deux modules Odoo : saisie en caisse (OWL, fonctionne aussi hors connexion) et rapprochement (modèles, assistant d'import, rapport QWeb).",
           "Lecture des relevés CSV, XLSX et XLS, avec des profils d'import adaptés à chaque opérateur.",
           "Tests automatisés Python et test d'interface, traduction française."
         ],
@@ -250,6 +242,14 @@
       }
     },
     "items": {
+      "mobi-stock": {
+        "name": "Mobi Stock",
+        "description": "Gestion hors ligne de boutiques de téléphonie et d'informatique : suivi par IMEI (clé de Luhn, unicité sur tout le réseau), caisse, achats avec ventilation des frais, transferts entre boutiques, import Excel, rapports et synchronisation entre boutiques. Application de bureau, logique métier testée sur SQLite."
+      },
+      "caisse": {
+        "name": "Caisse",
+        "description": "Logiciel de caisse hors ligne d'abord, synchronisé au retour de la connexion : multi-entreprise, multi-boutique, multi-caisse, tickets imprimés, back-office web et licences signées vérifiées hors ligne."
+      },
       "harrys-studio": {
         "name": "Harrys Studio",
         "description": "Site complet pour un salon d'onglerie en France, avec réservation en ligne : calendrier des disponibilités, choix du créneau et de la prestataire."
@@ -350,7 +350,6 @@
     "form_hint": "Le bouton ouvre votre messagerie avec le message déjà rempli : il ne reste qu'à l'envoyer."
   },
   "footer": {
-    "copyright": "© {year} Rariana Aina Andriamiadana. Tous droits réservés.",
-    "built_with": "Conçu avec Vue.js et Tailwind CSS."
+    "copyright": "© {year} Rariana Aina Andriamiadana. Tous droits réservés."
   }
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Rariana Aina Andriamiadana — Odoo functional & technical consultant",
-    "description": "Odoo functional and technical consultant: configuration, user support, acceptance testing, training and Odoo 19 module development for small and mid-sized businesses."
+    "description": "Odoo functional and technical consultant: configuration, user support, acceptance testing, training and Odoo module development for small and mid-sized businesses."
   },
   "nav": {
     "primary": "Main navigation",
@@ -28,7 +28,7 @@
     "role": "Odoo functional & technical consultant",
     "subtitle": "I help small and mid-sized businesses configure, support and evolve their Odoo ERP: requirements gathering, application setup, data imports, acceptance testing and user training — plus custom modules when the standard isn't enough.",
     "tags": [
-      "Odoo 19 Community & Enterprise",
+      "Odoo Community & Enterprise",
       "Sales · Purchase · Inventory · Point of Sale",
       "Accounting · HR · Payroll"
     ],
@@ -41,7 +41,7 @@
     "subtitle": "From business need to a working ERP",
     "portrait_alt": "Portrait of Rariana Aina Andriamiadana",
     "description_1": "From June to September 2026 I worked on Odoo at KASIA Consulting, a consulting and integration firm. I worked with small and mid-sized businesses from very different sectors — phone retail, consulting, sea freight, manufacturing — from the scoping workshop through to support after go-live.",
-    "description_2": "Before Odoo, I spent almost two years in technical customer support, then two years managing user accounts, access rights and onboarding training for new staff. That left me with habits I use every day: listen to the user, reproduce the problem, explain the fix simply.",
+    "description_2": "Before Odoo, I spent two years at Webhelp managing user accounts, permissions and onboarding training for new employees. I kept habits that help every day: listen to the user, understand the problem, explain the solution simply.",
     "description_3": "My background as a developer (Java, .NET, Vue.js, React, SQL) lets me go beyond configuration when needed: Python modules, XML views, QWeb reports, data imports and checks in PostgreSQL.",
     "highlight_functional": "Odoo functional configuration",
     "highlight_support": "User support and training",
@@ -72,7 +72,7 @@
         "period": "June 2026 – Sept. 2026",
         "bullets": [
           "Functional scoping and requirements analysis with clients: workshops, meeting minutes, clarification questions.",
-          "Odoo 19 configuration (Community and Enterprise): sales, purchase, multi-warehouse inventory, point of sale, invoicing, accounting, employees, payroll, expenses.",
+          "Odoo configuration (Community and Enterprise): sales, purchase, multi-warehouse inventory, point of sale, invoicing, accounting, employees, payroll, expenses.",
           "Data imports (products, stock, purchase orders) and consistency checks before validation.",
           "Internal acceptance testing, then acceptance testing with the client before every go-live.",
           "User support and handling of client feedback after go-live, following issues through to resolution.",
@@ -99,14 +99,6 @@
           "Management and review of user accounts, access rights and information-system permissions.",
           "Training new staff on security and compliance rules.",
           "Supporting client audits and following up on corrective actions."
-        ]
-      },
-      {
-        "role": "Customer Advisor",
-        "org": "Webhelp Madagascar",
-        "period": "Dec. 2020 – Aug. 2022",
-        "bullets": [
-          "Helping customers with technical and IT issues."
         ]
       }
     ],
@@ -163,7 +155,7 @@
           "Control report for the manager to sign."
         ],
         "technical": [
-          "Two Odoo 19 modules: till entry (OWL, also works offline) and reconciliation (models, import wizard, QWeb report).",
+          "Two Odoo modules: till entry (OWL, also works offline) and reconciliation (models, import wizard, QWeb report).",
           "Reads CSV, XLSX and XLS statements, with import profiles tailored to each operator.",
           "Automated Python tests and a UI test, French translation."
         ],
@@ -250,6 +242,14 @@
       }
     },
     "items": {
+      "mobi-stock": {
+        "name": "Mobi Stock",
+        "description": "Offline management for phone and computer shops: IMEI tracking (Luhn check, uniqueness across the network), point of sale, purchasing with cost allocation, shop-to-shop transfers, Excel import, reports and synchronization between shops. Desktop application with business logic tested on SQLite."
+      },
+      "caisse": {
+        "name": "Caisse",
+        "description": "Offline-first point of sale, synchronized when the connection returns: multi-company, multi-shop, multi-register, printed receipts, web back office and signed licences verified offline."
+      },
       "harrys-studio": {
         "name": "Harrys Studio",
         "description": "Complete website for a nail salon in France, with online booking: availability calendar, time slot and technician selection."
@@ -350,7 +350,6 @@
     "form_hint": "The button opens your email app with the message already filled in: you just need to send it."
   },
   "footer": {
-    "copyright": "© {year} Rariana Aina Andriamiadana. All rights reserved.",
-    "built_with": "Built with Vue.js and Tailwind CSS."
+    "copyright": "© {year} Rariana Aina Andriamiadana. All rights reserved."
   }
 }
