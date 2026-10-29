@@ -41,7 +41,7 @@
     "title": "About me",
     "subtitle": "From business need to live application",
     "portrait_alt": "Portrait of Rariana Aina Andriamiadana",
-    "description_1": "As a freelance full stack developer, I build websites and web applications remotely for clients in France, such as the Harrys Studio booking site or the redesign of the Agentova.ai website. I cover the whole chain: requirements, data model, interface, go-live and ongoing updates.",
+    "description_1": "As a freelance full stack developer, I build websites and web applications remotely for clients in France, such as the Harrys Studio booking site or the redesign of the Agentova.ai website. I also support five companies as an Odoo consultant. I cover the whole chain: requirements, data model, interface, go-live and ongoing updates.",
     "description_2": "At OPTIMADA, I evolved an HR application used by companies of 300 to 2,000 employees and took part in its migration to .NET and React, then built a customer portal in Spring Boot and React synchronized with Sage 100cloud CRM. At KASIA Consulting, I configured Odoo and developed custom modules in Python.",
     "description_3": "Before development, I spent two years at Webhelp auditing user accounts and information system access for about 500 employees. I kept the rigor, the service mindset and the habit of working to international clients' requirements.",
     "highlight_fullstack": "End-to-end full stack development",
@@ -64,7 +64,7 @@
     "demo": "Demo",
     "demo_aria": "Open the {name} demo",
     "odoo_title": "Specialty: Odoo",
-    "odoo_text": "I also work as an Odoo functional and technical consultant: Odoo configuration, data imports, acceptance testing, training and module development in Python, XML, QWeb and OWL, for instance for Mobile Money payments at the till or IMEI-based phone tracking.",
+    "odoo_text": "I currently support five companies as an Odoo consultant (agriculture, transport, real estate, import, essential goods distribution): configuration, module development in Python, XML, QWeb and OWL, user support and training.",
     "odoo_link": "See my Odoo portfolio",
     "other_title": "Other projects",
     "other_subtitle": "Earlier personal and academic projects, in Java, JavaScript and React Native.",
@@ -203,13 +203,14 @@
     "cv_link": "Download résumé",
     "items": [
       {
-        "role": "Freelance full stack developer",
-        "org": "Sole proprietorship · remote, clients in France",
+        "role": "Freelance full stack developer and Odoo consultant",
+        "org": "Sole proprietorship · Antananarivo and remote",
         "period": "Oct. 2026 – present",
         "bullets": [
           "Harrys Studio (nail salon): complete website with online booking, availability calendar, time slot and technician selection (React, Vite, Supabase).",
           "Agentova.ai (AI agents SaaS company): complete rebuild of the marketing website, moving from a dark to a light theme (Webflow).",
-          "Fully remote engagements: requirements, development, go-live and ongoing updates."
+          "Odoo consultant for 5 companies (agriculture, transport, real estate, import, essential goods distribution): configuration, module development, user support and training.",
+          "Fully remote web engagements for clients in France: requirements, development, go-live and ongoing updates."
         ]
       },
       {

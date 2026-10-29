@@ -41,7 +41,7 @@
     "title": "À propos de moi",
     "subtitle": "Du besoin métier à l'application en ligne",
     "portrait_alt": "Portrait de Rariana Aina Andriamiadana",
-    "description_1": "Développeur full stack freelance, je réalise à distance des sites et applications web pour des clients en France, comme le site de réservation de Harrys Studio ou la refonte du site d'Agentova.ai. J'interviens sur toute la chaîne : recueil des besoins, modèle de données, interface, mise en ligne et évolutions.",
+    "description_1": "Développeur full stack freelance, je réalise à distance des sites et applications web pour des clients en France, comme le site de réservation de Harrys Studio ou la refonte du site d'Agentova.ai. J'accompagne aussi cinq entreprises comme consultant Odoo. J'interviens sur toute la chaîne : recueil des besoins, modèle de données, interface, mise en ligne et évolutions.",
     "description_2": "Chez OPTIMADA, j'ai fait évoluer une application RH utilisée par des entreprises de 300 à 2 000 salariés et participé à sa migration vers .NET et React, puis développé un portail client en Spring Boot et React synchronisé avec Sage 100cloud CRM. Chez KASIA Consulting, j'ai paramétré Odoo et développé des modules sur mesure en Python.",
     "description_3": "Avant le développement, j'ai passé deux ans chez Webhelp à contrôler la conformité des comptes et des accès aux systèmes d'information d'environ 500 collaborateurs. J'en garde la rigueur, le sens du service et l'habitude des exigences de clients internationaux.",
     "highlight_fullstack": "Développement full stack de A à Z",
@@ -64,7 +64,7 @@
     "demo": "Démo",
     "demo_aria": "Ouvrir la démo de {name}",
     "odoo_title": "Spécialité : Odoo",
-    "odoo_text": "J'interviens aussi comme consultant Odoo fonctionnel et technique : paramétrage d'Odoo, imports de données, recette, formation et développement de modules en Python, XML, QWeb et OWL, par exemple pour les paiements Mobile Money en caisse ou le suivi des téléphones par IMEI.",
+    "odoo_text": "J'accompagne actuellement cinq entreprises comme consultant Odoo (agriculture, transport, immobilier, import, distribution de produits de première nécessité) : paramétrage, développement de modules en Python, XML, QWeb et OWL, support et formation des utilisateurs.",
     "odoo_link": "Voir mon portfolio Odoo",
     "other_title": "Autres projets",
     "other_subtitle": "Projets personnels et académiques antérieurs, en Java, JavaScript et React Native.",
@@ -203,13 +203,14 @@
     "cv_link": "Télécharger le CV",
     "items": [
       {
-        "role": "Développeur full stack freelance",
-        "org": "Entreprise individuelle · télétravail, clients en France",
+        "role": "Développeur full stack et consultant Odoo freelance",
+        "org": "Entreprise individuelle · Antananarivo et télétravail",
         "period": "Oct. 2026 – aujourd'hui",
         "bullets": [
           "Harrys Studio (salon d'onglerie) : site complet avec réservation en ligne, calendrier des disponibilités, choix du créneau et de la prestataire (React, Vite, Supabase).",
           "Agentova.ai (éditeur SaaS d'agents IA) : refonte complète du site vitrine, passage d'un thème sombre à un thème clair (Webflow).",
-          "Missions entièrement à distance : recueil des besoins, développement, mise en ligne et évolutions."
+          "Consultant Odoo pour 5 entreprises (agriculture, transport, immobilier, import, distribution de produits de première nécessité) : paramétrage, développement de modules, support et formation des utilisateurs.",
+          "Missions web entièrement à distance pour des clients en France : recueil des besoins, développement, mise en ligne et évolutions."
         ]
       },
       {
