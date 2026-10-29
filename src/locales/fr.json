@@ -40,7 +40,7 @@
     "title": "À propos de moi",
     "subtitle": "Du besoin métier à l'ERP qui tourne",
     "portrait_alt": "Portrait de Rariana Aina Andriamiadana",
-    "description_1": "De juin à septembre 2026, j'ai travaillé sur Odoo chez KASIA Consulting, un cabinet de conseil et d'intégration. J'y suis intervenu auprès de PME de secteurs très différents — distribution de téléphonie, conseil, transit maritime, industrie — de l'atelier de cadrage jusqu'au support après la mise en production.",
+    "description_1": "Depuis octobre 2026, j'accompagne en freelance cinq entreprises sur Odoo (agriculture, transport, immobilier, import, distribution de produits de première nécessité). Auparavant, de juin à septembre 2026, j'ai travaillé sur Odoo chez KASIA Consulting, un cabinet de conseil et d'intégration. J'y suis intervenu auprès de PME de secteurs très différents — distribution de téléphonie, conseil, transit maritime, industrie — de l'atelier de cadrage jusqu'au support après la mise en production.",
     "description_2": "Avant Odoo, j'ai passé deux ans chez Webhelp à gérer les comptes utilisateurs, les habilitations et la formation des nouveaux collaborateurs. J'en garde des réflexes utiles au quotidien : écouter l'utilisateur, comprendre le problème, expliquer la solution simplement.",
     "description_3": "Mon parcours de développeur (Java, .NET, Vue.js, React, SQL) me permet d'aller plus loin que le paramétrage quand c'est nécessaire : modules Python, vues XML, rapports QWeb, imports et contrôles de données en PostgreSQL.",
     "highlight_functional": "Paramétrage fonctionnel Odoo",
@@ -57,13 +57,13 @@
     "cv_link": "Télécharger le CV",
     "items": [
       {
-        "role": "Développeur full stack freelance",
-        "org": "Entreprise individuelle · télétravail, clients en France",
+        "role": "Consultant Odoo et développeur full stack freelance",
+        "org": "Entreprise individuelle · Antananarivo et télétravail",
         "period": "Oct. 2026 – aujourd'hui",
         "bullets": [
+          "Consultant Odoo pour 5 entreprises (agriculture, transport, immobilier, import, distribution de produits de première nécessité) : paramétrage, développement de modules, support et formation des utilisateurs.",
           "Harrys Studio (salon d'onglerie) : site complet avec réservation en ligne (React, Vite, Supabase).",
-          "Agentova.ai (éditeur SaaS d'agents IA) : refonte complète du site vitrine (Webflow).",
-          "Missions entièrement à distance : recueil des besoins, développement, mise en ligne et évolutions."
+          "Agentova.ai (éditeur SaaS d'agents IA) : refonte complète du site vitrine (Webflow)."
         ]
       },
       {

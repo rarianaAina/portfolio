@@ -40,7 +40,7 @@
     "title": "About me",
     "subtitle": "From business need to a working ERP",
     "portrait_alt": "Portrait of Rariana Aina Andriamiadana",
-    "description_1": "From June to September 2026 I worked on Odoo at KASIA Consulting, a consulting and integration firm. I worked with small and mid-sized businesses from very different sectors — phone retail, consulting, sea freight, manufacturing — from the scoping workshop through to support after go-live.",
+    "description_1": "Since October 2026, I have been supporting five companies on Odoo as a freelancer (agriculture, transport, real estate, import, essential goods distribution). Before that, from June to September 2026, I worked on Odoo at KASIA Consulting, a consulting and integration firm. I worked with small and mid-sized businesses from very different sectors — phone retail, consulting, sea freight, manufacturing — from the scoping workshop through to support after go-live.",
     "description_2": "Before Odoo, I spent two years at Webhelp managing user accounts, permissions and onboarding training for new employees. I kept habits that help every day: listen to the user, understand the problem, explain the solution simply.",
     "description_3": "My background as a developer (Java, .NET, Vue.js, React, SQL) lets me go beyond configuration when needed: Python modules, XML views, QWeb reports, data imports and checks in PostgreSQL.",
     "highlight_functional": "Odoo functional configuration",
@@ -57,13 +57,13 @@
     "cv_link": "Download the résumé",
     "items": [
       {
-        "role": "Freelance full stack developer",
-        "org": "Sole proprietorship · remote, clients in France",
+        "role": "Freelance Odoo consultant and full stack developer",
+        "org": "Sole proprietorship · Antananarivo and remote",
         "period": "Oct. 2026 – present",
         "bullets": [
+          "Odoo consultant for 5 companies (agriculture, transport, real estate, import, essential goods distribution): configuration, module development, user support and training.",
           "Harrys Studio (nail salon): complete website with online booking (React, Vite, Supabase).",
-          "Agentova.ai (AI agents SaaS company): complete rebuild of the marketing website (Webflow).",
-          "Fully remote engagements: requirements, development, go-live and ongoing updates."
+          "Agentova.ai (AI agents SaaS company): complete rebuild of the marketing website (Webflow)."
         ]
       },
       {
